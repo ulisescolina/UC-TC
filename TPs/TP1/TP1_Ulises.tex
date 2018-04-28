@@ -1,0 +1,187 @@
+\documentclass{article}
+\renewcommand\refname{Referencias}
+\usepackage{graphicx}
+\graphicspath{{imagenes/}}
+\begin{document}
+
+
+\title{\includegraphics{unam-logo.png}\\Trabajo Pr\'actico N\'umero 1\\Teor\'ia de la Computaci\'on}
+\author{Ulises C. Ramirez}
+\date{22 Abril 2018}
+\maketitle
+\pagenumbering{gobble}
+\newpage
+
+\pagenumbering{arabic}
+\section{{\textquestiondown}Qu\'e es un lenguaje de programaci\'on?}
+\subsection{Abstracciones en los lenguajes de programaci\'on}
+
+\begin{center}
+	\begin{tabular}{|| c  c  c ||} 
+		\hline
+		\textbf{Abstracci\'on} & \textbf{de Datos} & \textbf{de Control} \\ [0.5ex] 
+		\hline\hline
+		\textbf{B\'asica} & tipos at\'omicos, variables & Asignaci\'on, goto \\ 
+		\hline
+		\textbf{Estructurada} & tipos estructurados & bucles, condicionales, subprogramas \\
+		\hline
+		\textbf{Unitaria} & m\'odulos, paquetes \\
+		\hline
+	\end{tabular}
+\end{center}
+
+La \textbf{abstracci\'on} en los lenguajes de programaci\'on hace referencia principalmente a dos cuestiones: una de ellas trata acerca de la \textbf{Abstracci\'on de Datos} y la otra trata de la \textbf{Abstracci\'on del Control} la cual trata de las propiedades en cuanto a la estrategia de ejecuci\'on de un programa en una situacion determinada (ej: Bucles, sentencias condicionales, etc). Ambos tipos de abstracciones tienen una subclasificaci\'on, esta es: b\'asica, estructurada y unitaria. 
+
+\subsubsection{Abstracci\'on de Datos}
+\begin{itemize}
+  \item \textbf{Abstracci\'on de datos b\'asica}: \'esta se refiere a la representaci\'on interna de los tipos de datos at\'omicos que ofrece el lenguaje junto a las operaciones est\'andar, otro tipo de abstracci\'on simb\'olica es la referenciaci\'on en memoria de una variable.
+  \item \textbf{Abstracci\'on de datos estructurada}: \'este hace referecia al mecanismo de abstracci\'on para las colecciones de datos, por ejemplo, una estructura t\'ipica son los arreglos (\textbf{Array}, tambien llamados vector).
+  \item \textbf{Abstracci\'on de datos unitaria}: \'esta hace referencia a una agrupaci\'on como \'unica unidad de datos y operaci\'on sobre estos datos. \'Esto vendr\'ia a significar la introducci\'on de del concepto de \textbf{encapsulado de datos} u ocultaci\'on de la informaci\'on. \'Estas, adem\'as, se asocian a menudo con los tambi\'en denominados \textbf{TDA} (Tipos de Datos Abstractos) cuyo concepto se abarc\'o con profundidad en la materia \textbf{Algoritmos y Estructuras de Datos}
+\end{itemize}
+
+\subsubsection{Abstracci\'on de Control}
+
+\begin{itemize}
+  \item \textbf{Abstracci\'on de control b\'asica}: \'esta se refiere a sentencias individuales que permiten modificar el control de flujo de la ejecuci\'on de un programa (ej: \textbf{sentencia de asignaci\'on} o el \textbf{GOTO} de los lenguajes que permitian la transferencia de control de una sentencia a otra parte del programa).
+  \item \textbf{Abstracci\'on de control estructurada}: estas agrupan sentencias m\'as simples para crear una estructura con un prop\'osito comun que permite gobernar la ejecuci\'on de un programa (ej: bucles, sentencias condicionales if). Otro mecanismo util para la estructuraci\'on de un programa es \textbf{Subprograma}, t\'ipico concepto que se puede ver aplicado en los \textbf{procedimientos} utilizados en Pascal o los \textbf{m\'etodos} utilizados en Java.
+  \item \textbf{Abstracci\'on de control unitaria}: \'esta permite agrupar una coleccion de subprogramas como una unidad en s\'i misma e independiente del programa. As\'i se logra aislar parte del programa cuyo funcionamiento no es necesario conocer en detalle, se mejora la comprensi\'on del mismo. 
+\end{itemize}
+
+\section{Definici\'on de Lenguaje de Programaci\'on}
+Podr\'iamos seguir a Louden \cite{lengprog} para la definici\'on de lo que es un lenguaje de programaci\'on: "\textit{Un lenguaje de programaci\'on es un sistema notacional para describir compuaciones en una forma legible tanto para el ordenarod omo para el programador}".
+
+\section{Definici\'on de Lenguaje}
+Los lenguajes de programacion deben describirse de manera formal, completa y precisa. Esta descripción ha de ser, ademas, independiente de la máquina y de la implementaci\'on. Para ello se utilizan habitualmente est\'andares aceptados universalmente.
+
+Los elementos fundamentales para la definici\'on de un lenguaje de programaci\'on son los siguientes:
+\begin{itemize}
+\item El \textbf{l\'exico} o conjunto de "palabras" o unidades l\'exicas que son las cadenas de caracteres significativas del lenguaje, tambien denominados tokens. Tambi\'en se conocen como unidades l\'exicas a los \textbf{identificadores}, los simbolos especiales de \textbf{operadores} y los \textbf{s\'imbolos de puntuaci\'on}.
+
+\item la \textbf{sintaxis} o estructura que conlleva la descripci\'on de los diferentes componentes del lenguaje y de sus combinaciones posibles. Para ello se utilizan las \textbf{gram\'aticas libres de contexto}, un est\'andar aceptado universalmente.
+
+\item la \textbf{sem\'antica} expresa los efecos de la ejecuci\'on en un contexto determinado. A veces esta definici\'on interact\'ua con otros significados del lenguaje, esto hace que sea la parte m\'as compleja en la definici\'on del lenguaje.
+Entre los sistemas de notaci\'on para definiciones sem\'anticas formales se encuentran \textbf{sem\'antica operacional}, \textbf{sem\'antica denotacional} y la \textbf{sem\'antica axiom\'atica}.
+\end{itemize}
+
+\textit{Sem\'antica Operacional}: el significado de una construcci\'on es una descripci\'on de su ejecuci\'on en una m\'aquina hipot\'etica.
+
+\textit{Sem\'antica denotacional}: asigna objetos matem\'aticos a cada componente del lenguaje para que modele su significado.
+
+\textit{Sem\'antica axiom\'atica}: modela el significado con un conjunto de axiomas que describen a sus componentes junto con alg\'un tipo de inferencia del significado.
+
+\section{Dise\~{n}o del Lenguaje}
+El reto de un lenguaje es lograr la potencia, expresividad y comprensi\'on que requiere la legibilidad del programador, conservando la precisi\'on y simplicidad necesarias para su traduccion al lenguaje m\'aquina.
+
+La legibilidad de los programadores es proporcional a las capacidades de abstracci\'on del lenguaje, como por ejemplo, se abstraen los datos y los controles <vistos anteriormente>. \textit{Es seguro decir que uno de los objetivos, si no \'El objetivo de la abstraccion en el dise\~{n}o de los lenguajes de programaci\'on es el manejo de la \textbf{complejidad}}
+
+Aspectos de dise\~{n}o en los lenguajes:
+\subsection{Efificiencia}
+El dise\~{n}o debe permitir al traductor la generacion de codigo \textbf{ejecutable eficiente}, tambi\'en conocido como \textbf{optimizabilidad}.
+La eficiencia se organiza en tres principios: eficiencia de traducci\'on, de implementaci\'on y de programaci\'on.
+
+\begin{itemize}
+\item La \textbf{eficiencia de traducci\'on} estipula que el dise\~{n}o del lenguaje debe permitir el desarrollo de un traductor eficiene y de un tama\~{n}o razonable. Por ejemplo: Pascal o C, por restricciones de \textbf{dise\~{n}o} exigen que las variables se declaren antes de su uso, permitiendo as\'i que el compilador de una sola pasada. Logrando ser eficiente en el uso de los recursos a la hora de traducci\'on.
+\item La \textbf{eficiencia de implementaci\'on} es la eficiencia con la que se puede escribir un traductor, que a su vez depende de la complejidad del lenguaje.
+\item la \textbf{eficiencia de la programaci\'on} est\'a relacionada con la rapidez y la facilidad para escribir programas o \textbf{capacidad expresiva} del lenguaje. Esta capacidad expresiva se refiere a la facilidad para escribir procesos complejos de forma que el programador relacione de manera sencilla su idea con el c\'odigo.
+Este es un aspecto relacionado con la potencia y la generalidad de los mecanismos de abstracci\'on y la sintaxis.
+\end{itemize}
+
+\subsection{Regularidad}
+Este principio hace referencia al comportamiento de las caracter\'isticas del lenguaje. Se subdivide en tres propiedades: la generalidad, la ortogonalidad y la uniformidad, si se viola una de ellas, el lenguaje ya se puede clasificar como irregular.
+
+\begin{itemize}
+\item la \textbf{generalidad} se consige cuando el uso y la disponibilidad de los constructores no est\'an sujetas a casos especiales y cuando el lenguaje incluye solo a los constructores necesarios y el resto se obtienen por combinacion de constructores realacionados.
+\item la \textbf{ortogonalidad} (tambi\'en llamada dependencia) ocurre cuando los constructores del lenguaje pueden admitir combinaciones significativas en ellas, la interaccion de los constructores o con el contexto, no provocan restrcciones ni comportamientos inesperados.
+\item la \textbf{uniformidad} se refiere a que \textit{lo similar se ve similar y lo diferente, diferente} lo que implica la consistencia entre la apariencia y el comportamiento de los constructores.
+\end{itemize}
+
+\subsection{Principios adicionales}
+
+En los siguientes apartados se presentan cuestiones adicionales a la legibilidad, eficiencia y regularidad del dise\~{o} de lenguajes de programaci\'on, que ayudan a definir un buen dise\~{n}o o a elegir mejor el lenguaje para un escenario concreto.
+
+\subsubsection{Simplicidad}
+
+Este se refiere a que cada concepto del lenguaje se represente de una forma \'unica y legible  y sem\'anticamente que contiene el menos n\'umero posible de conceptos y estructuras con reglas sencillas de combinacion.
+
+\subsubsection{Expresividad}
+
+Es la facilidad con la que un lenguaje de programaci\'on permite expresar procesos y estructuras complejas. Uno de los mecanismos m\'as expresivos es la recursividad. Una expresividad muy alta entra en conflicto con la simplicidad ya que el ambiente de ejecuci\'on es complejo.
+
+\subsubsection{Extensibilidad}
+
+Es la propiedad asociada con la posibilidad de a\~{n}adir nuevas caracter\'isticas a un lenguaje, como nuevos tipos de datos o nuevas funciones a la biblioteca. O tambien a\~{n}adir palabras clave y constructores al traductor. 
+
+Otro aspecto importante de la extensibilidad es la \textbf{modularidad}, es decir, la capacidad de disponer de bibliotecas y agregar nuevas. Esta tambi\'en se corresponde con la posibilidad de dividir un programa en partes independientes (denominados m\'odulos o paquetes) que puedan enlazarse para su ejecucion.
+
+\subsubsection{Capacidad de restricci\'on}
+
+\'Esta se refiere a la posibilidad de que un programador utilice solo un subconjuto de constructores m\'inimo y por lo tanto solo necesite un conocimiento parcial del lenguaje. Esto ofrece dos venajas: el programador no necesita aprender todo el lenguaje, y por otra parte, el traductor puede implementar solo un subconjunto determinado porque la implementaci\'on para todo el lenguaje sea muy costosa e innecesaria.
+
+Un aspecto relacionado a la capacidad de restricci\'on es la \textbf{eficiencia}: porque un programa no utilice ciertas caracter\'isticas del lenguaje, su ejecuci\'on no debe ser mas ineficiente.
+
+Otro aspecto a tener en cuenta que esta relacionado con la capacidad de restricci\'on es el \textbf{desarrollo incremental} del mismo. Por ejemplo, Java ha evolucionado con respecto a su versi\'on inicial, y en cada nueva versi\'on se han incluido caracter\'isticas que no estaban en versiones anteriores.
+
+\subsubsection{Consistencia entre la notaci\'on y las convenciones}
+
+Un lenguaje debe incorporar notaciones y cualquier otra caracter\'istica que ya se hayan convertido en est\'andares como lo son el concepto de programa, funciones y variable. El que estos aspectos queden perfectamente reconocibles, facilita a los programadores experimentados el uso del lenguaje, de igual manera podemos mencionar las notaciones relacionadas a las matem\'aticas como los operadores aritm\'eticos (+, -, etc).
+
+\subsubsection{Portabilidad}
+
+Esta se consigue si la definici\'on del lenguaje de programaci\'on es independiente de una m\'aquina en particular. Normalmente, los lenguajes interpretados o aquellos cuya ejecuci\'on se delega en una m\'aquina virtual lo son.
+
+\subsubsection{Seguridad}
+
+Este pretende evitar los errores de programaci\'on, y permitir su descubrimiento. por lo tanto la seguridad est\'a muy relacionada con la fiabilidad y la presici\'on. Sin embargo, la seguridad compromete a la capacidad expresiva del lenguaje, pues se apoya en que el programador especif\'ique todo lo que sea posible en el c\'odigo para evitar errores.
+
+\subsubsection{Interoperabilidad}
+
+Esta se refiere a la facilidad que tienen diferente tipos de ordenadores, redes, sistemas operativos, aplicaciones o sistemas en general para trabajar conjuntamente de manera efectiva, sin comunicaciones previas, para intercambiar informaci\'on \'util y con sentido.
+
+Hay \textbf{interoperabilidad sem\'antica} cuando los sistemas intercambian mensajes entre s\'i interpretando el significado y el contexto de los datos, \textbf{interoperabilidad sint\'actica}, cuando un sistema lee datos de otro, mediante una representaci\'on compatible (metalenguajes como XML), e \textbf{interoperabilidad estructural} cuando los sistemas pueden comunicarse e interactuar en ambientes heterog\'eneos.
+
+Para que esto sea posible entre aplicaciones desarrolladas en diferentes lenguajes de programaci\'on y ejecutadas en cualquier plataforma, se debe establecer la representaci\'on de la informaci\'on a intercambiar y adem\'as utilizar un protocolo de comunicaci\'on. Existen est\'andares para intercambiar datos entre aplicaciones.
+
+\section{Paradigmas}
+
+\subsection{Paradigmas de programaci\'on}
+
+Los paradigmas de programaci\'on mencionados a continuaci\'on fueron consultados desde lo citado en el aprartado  \textbf{\textit{Referencias}}.
+
+\subsubsection{Programaci\'on orientada a objetos \cite{lengprog}}
+
+Este se basa en la idea de que un objeto se puede describir como una colecci\'on de posiciones de memoria junto con todas las operaciones que pueden cambiar los valores de dichas posiciones. Estas entidades \textsc{objetos} se agrupan en clases que representan a todos los que tienen las mismas propiedades. Estas clases se definen mediante declaraciones parecidas a las de los objetos estructurados en C o Pascal, estos objetos se crean a partir de la instanciaci\'on de la clase.
+
+\subsubsection{Programaci\'on funcional \cite{lengprog}}
+
+La computaci\'on en el paradigma funcional se fundamenta en la evaluaci\'on de funciones o en la aplicaci\'on de funciones a valores conocidos, por lo que tambien se denominan \textbf{lengujes iperativos}. El mecanismo b\'asico es la evaluaci\'on de \textbf{funciones}, con las siguientes caracter\'isticas:
+
+\begin{itemize}
+\item Transferencia de valores como par\'ametros de las funciones que se eval\'uan.
+\item La generaci\'on de resultados en forma de valores devueltos por las funciones.
+\end{itemize}
+
+\subsubsection{Programaci\'on l\'ogica \cite{lengprog}}
+
+En \'este paradigma un programa est\'a formado por un conjunto de sentencias que describen lo que es \textit{verdad} o \textit{conocido} con respecto a un problema, en vez de indicar la secuencia de psos que llevan al resultado. No necesita abstracciones de control condicionales ni de ciclos ya que el control lo aporta el modelo de inferencia l\'ogica que subyace.
+
+
+%==========Bibliografia===================================
+\newpage
+\begin{thebibliography}{9}
+	\bibitem{teolengprog} 
+	\textsc{Fernando L\'opez Ostenero, Ana Mar\'ia Garc\'ia Serrano}
+	\textit{Teor\'ia de los Lenguajes de Programaci\'on}. 
+	Editorial Universitaria Ram\'on Areces.
+
+	\bibitem{lengprog} 
+	\textsc{Louden, K. Enneth C}
+	\textit{Lenguajes de Programaci\'on principios y pr\'actica. Segunda edici\'on}. 
+	Thomson, 2004.
+	
+	\bibitem{proglanprag}
+	\textsc{Michael L. Scott} 
+	\textit{Programming Language Pragmatics}. 
+	Department of Computer Science, University of Rochester.
+\end{thebibliography}
+\end{document}
+
