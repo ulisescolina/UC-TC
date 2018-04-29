@@ -3,6 +3,37 @@
 \renewcommand\refname{Referencias}
 \usepackage{graphicx}
 \graphicspath{{../imagenes/}}
+
+% prueba
+\usepackage{etoolbox,refcount}
+\usepackage{multicol}
+
+\newcounter{countitems}
+\newcounter{nextitemizecount}
+\newcommand{\setupcountitems}{%
+  \stepcounter{nextitemizecount}%
+  \setcounter{countitems}{0}%
+  \preto\item{\stepcounter{countitems}}%
+}
+\makeatletter
+\newcommand{\computecountitems}{%
+  \edef\@currentlabel{\number\c@countitems}%
+  \label{countitems@\number\numexpr\value{nextitemizecount}-1\relax}%
+}
+\newcommand{\nextitemizecount}{%
+  \getrefnumber{countitems@\number\c@nextitemizecount}%
+}
+\newcommand{\previtemizecount}{%
+  \getrefnumber{countitems@\number\numexpr\value{nextitemizecount}-1\relax}%
+}
+\makeatother    
+\newenvironment{AutoMultiColItemize}{%
+\ifnumcomp{\nextitemizecount}{>}{3}{\begin{multicols}{2}}{}%
+\setupcountitems\begin{itemize}}%
+{\end{itemize}%
+\unskip\computecountitems\ifnumcomp{\previtemizecount}{>}{3}{\end{multicols}}{}}
+% fin prueba
+
 \begin{document}
 
 
@@ -45,7 +76,8 @@ A continuaci\'on se enumeran las diferencias solicitadas a modo de un cuadro com
 \subsection{Ventajas de Compiladores sobre Int\'erpretes} \cite{comppth} \cite{comintp}
 \begin{itemize}
 \item El programa destino producido por un compilador es, por lo general, m\'as rapido que un int\'erprete al momento de asignar las entradas a las dsalidas
-\item Una vez compilado, la computadora es capaz de leer el lenguaje maquina y no tener que interpretar linea a linea las sentencias del programa. 
+\item Una vez compilado, la computadora es capaz de leer el lenguaje maquina y no tener que interpretar linea a linea las sentencias del programa.
+\item Al tener que ser inspeccionados en la etapa de compilacion por el compilador, a estos se les puede descubrir errores relacionados con el checkeo de tipeo estatico \cite{wikistattype}. El checkeo de tipeo estatico puede ser considerado una optimizacion, ya que un compilador puede proar que si un programa est\'a bien tipeado, entonces no necesita emitir \textit{chequeos de seguridad din\'amicos} 
 \end{itemize}
 
 \subsection{Ventajas de Int\'erpretes sobre Compiladores}\cite{comppth} \cite{comintp}
@@ -53,6 +85,7 @@ A continuaci\'on se enumeran las diferencias solicitadas a modo de un cuadro com
 \item Este por lo regular puee ofrecer mejores diagnosticos de error de un compilador, dado a que ejecuta un programa funte, instrucci\'on por instrucci\'on.
 \item Un int\'erprete no posee proceso intermedio para la obtencion de un programa fuente, por lo que si se tiene un codigo muy grande, este lo ejecutar\'a linea a linea.
 \item Facilita la depuraci\'on y prueba de c\'odigo dado a que no debe pasar por un proceso de compilacion cada vez que se ejecute.
+\item Se tiene la posibilidad de leer el c\'odigo fuente sin tener que decompilar el paquete.
 \end{itemize}
 
 \section{{\textquestiondown}En qu\'e situaci\'on eligir\'ia un lenguaje compilado y en qu\'e situaci\'on un lenguaje interpretado?}
@@ -61,6 +94,35 @@ En los tiempos actuales y con la tecnolog\'ia disponible, esta eleccion se basa 
 
 Sin embargo, no todo tiene por que ser blanco o negro, a lo que me refiero con eso es que, es posible que se decida utilizar en las secciones de codigo que necesitan de un nivel de respuesta excesivamente alto, algun lenguaje que se ajuste a esas necesidades como ser bajo nivel, y en las partes menos demandantes utilizar lenguajes de mas alto nivel y con capas de abstracci\'on que permitan que la productividad sea mayor en el equipo de desarrollo. Como ejemplo, podemos hablar de un backend en alguna aplicaci\'on cliente-servidor, en el cual tendremos que la parte "pesada y demandante" la va a ejecutar el servidor, por tanto esta ser\'a la parte que estar\'a desarrollada en C o Assembler, por ejemplo, y luego el cliente, que basicamente estar\'a funcionando como una interfaz para la carga, puede utilizar lenguajes de mucho mas alto nivel como pueden ser C++, Java, Python, Ruby etc, que contienen capas de abstraccion que facilitan su comprensi\'on y manejo. 
 
+\section{Ejemplos de lenguajes compilados e interpretados}
+
+Se eligieron los ejemplos nombrados a continuacion debido a la afinidad de algunos de ellos con la bibliografia consultada.
+Dado que la misma nombra constantemente a lenguajes como C, C++, COBOL, etc. se decidi\'o incluirlos en los ejemplos y clasificarlos.
+
+\subsection{Ejemplos de lenguajes Compilados}
+
+Como ejemplo de lenguajes compilados podemos mencionar los siguientes:
+
+\begin{AutoMultiColItemize}
+  \item C++
+  \item C
+  \item COBOL
+  \item Fortran
+  \item Java
+  \item Pascal
+\end{AutoMultiColItemize}
+
+\subsection{Ejemplos de lenguajes Interpretados}
+
+Dada la amplia demanda en los tiempos actuales de personas que buscan aprender el dise\~{n}o de aplicaciones con arquitectura web, podemos hacer menci\'on espec\'ificamente de lenguajes que son, justamente, interpretados por el motor del navegador y descifrado para obtener elementos del \textbf{DOM} y asi visualizar lo que se programa con lenguaje de tipo etiquetado y de estilos (HTML, CSS), a continuaci\'on se nombran como ejemplos de lenguajes interpretados algunos de los mas famosos:
+
+\newpage
+\begin{AutoMultiColItemize}
+  \item PHP
+  \item Javascript
+  \item Ruby (Menciono a esto por su popular framework para desarrollo web \textit{Ruby on Rails})
+  \item Python (Popular dentro de lo que es scripting, aunque tambien popular en desarrollo web con su framework \textit{Django} )
+\end{AutoMultiColItemize}
 
 %==========Bibliografia===================================
 \newpage
@@ -75,5 +137,10 @@ Sin embargo, no todo tiene por que ser blanco o negro, a lo que me refiero con e
 	\textsc{Alfonseca Moreno, M.; De la Cruz Echeand\'ia, M.; Ortega de la Puente, A.; Pulido Ca\~{n}abate, E}
 	\textit{Compiladores e Int\'erpretes: teor\'ia y pr\'actica}. 
 	Pearson Educaci\'on, S.A, Madrid, 2006. \textsc{isbn 10: 84-205-5031-0; isbn 13: 978-84-205-5031-2}
+
+
+	\bibitem{wikistattype} 
+	\textsc{Wikipedia, Type system}
+	\textit{Static type-checking}. 
 \end{thebibliography}
 \end{document}
