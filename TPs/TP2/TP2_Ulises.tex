@@ -1,0 +1,79 @@
+
+\documentclass{article}
+\renewcommand\refname{Referencias}
+\usepackage{graphicx}
+\graphicspath{{../imagenes/}}
+\begin{document}
+
+
+\title{\includegraphics{unam-logo.png}\\Trabajo Pr\'actico N\'umero 2\\Teor\'ia de la Computaci\'on}
+\author{Ulises C. Ramirez}
+\date{28 Abril 2018}
+\maketitle
+\pagenumbering{gobble}
+\newpage
+
+\pagenumbering{arabic}
+\section{{\textquestiondown}Qu\'e es un compilador?}
+A grandes rasgos, un compilador es un programa que lee un programa escrito en un lenguaje (lo podemos denominar como el lenguaje \textit{fuente}), y lo traduce a un programa equivalente en otro lenguaje (al cual podemos denominar lenguaje \textit{objeto}). Como parte importante de este proceso de traducci\'on, el compilador informa a su usario de la presencia de errores en el programa fuente.
+
+Estos compiladores pueden clasificarse como: de una pasada, de m\'ultiples pasadas, de carga y ejecuci\'on, de depuraci\'on o de optimizaci\'on, dependiendo de como hayan sido construidos o de qu\'e funci\'on se supone que realizan.
+
+\section{ {\textquestiondown} Qu\'e es un int\'erprete de lenguaje de compilaci\'on?}
+Como se especifica en \cite{comppth}, un \textit{int\'erprete} es otro tipo com\'un de procesador de lenguaje. En vez de producir un programa destino como una traduccion, el int\'erprete nos da la apariencia de ejecutar directamente las operaciones especificadas en el programa de origen (fuente) con las entrdas proporcionadas por el usuario.
+
+
+\section{Enumere las diferencias entre un compilador y un int\'erprete}
+A continuaci\'on se enumeran las diferencias solicitadas a modo de un cuadro comparativo sencillo, la informacion ah\'i detallada se extrajo de \cite{comppth}.
+
+\begin{center}
+	\begin{tabular}{||  p{55mm} p{55mm}  ||} 
+		\hline
+		\textbf{Compilador} & \textbf{Int\'erprete} \\ [0.5ex] 
+		\hline\hline
+		Lee un programa fuente  & Lee un programa fuente, y entradas \\ \hline
+		Realiza una serie de procesos estudiados en el TP1 y genera un programa destino & Interpreta las entradas que recibio y genera una salida \\
+		\hline
+		Acepta entradas del usuario unicamente una vez pase por el proceso de compilacion & las entradas se interpretan junto con el codigo del programa \\
+		\hline
+	\end{tabular}
+\end{center}
+
+
+\section{Enumere las ventajas de Compiladores sobre Int\'erpretes y las de Int\'erpretes sobre Compiladores}
+
+\subsection{Ventajas de Compiladores sobre Int\'erpretes} \cite{comppth} \cite{comintp}
+\begin{itemize}
+\item El programa destino producido por un compilador es, por lo general, m\'as rapido que un int\'erprete al momento de asignar las entradas a las dsalidas
+\item Una vez compilado, la computadora es capaz de leer el lenguaje maquina y no tener que interpretar linea a linea las sentencias del programa. 
+\end{itemize}
+
+\subsection{Ventajas de Int\'erpretes sobre Compiladores}\cite{comppth} \cite{comintp}
+\begin{itemize}
+\item Este por lo regular puee ofrecer mejores diagnosticos de error de un compilador, dado a que ejecuta un programa funte, instrucci\'on por instrucci\'on.
+\item Un int\'erprete no posee proceso intermedio para la obtencion de un programa fuente, por lo que si se tiene un codigo muy grande, este lo ejecutar\'a linea a linea.
+\item Facilita la depuraci\'on y prueba de c\'odigo dado a que no debe pasar por un proceso de compilacion cada vez que se ejecute.
+\end{itemize}
+
+\section{{\textquestiondown}En qu\'e situaci\'on eligir\'ia un lenguaje compilado y en qu\'e situaci\'on un lenguaje interpretado?}
+
+En los tiempos actuales y con la tecnolog\'ia disponible, esta eleccion se basa en un aspecto fundamental desde mi pundo de vista. En primera instancia podemos decir que diferencia en rendimiento entre ambos programas \'unicamente se ver\'a cuando el ecosistema en el que se encuentre el programa sea muy demandante, ejemplo: Twitter, Facebook, Google. En estos entornos la ejecuci\'on de los programas afecta en gran medida al usuario final y podr\'ia ser la diferencia en que uno elija un sistema u otro. En casos muy extremos como estos, seria conveniente elejir algun lenguaje que funcione a bajo nivel y que deba pasar por una etapa de compilacion como lo puede ser C, en cambio, vali\'endome del argumento mencionado al principio, acerca de las tecnolog\'ias disponibles actualmente, para lugares menos demandantes (No por eso significa que sean entornos de una escala excesivamente peque\~{n}a) seria conveniente elegir un lenguaje interpretado dado a que los tiempos de compilacion serian inexistentes y las pruebas podr\'an hacerse sin tener que pasar por la etapa mencionada.
+
+Sin embargo, no todo tiene por que ser blanco o negro, a lo que me refiero con eso es que, es posible que se decida utilizar en las secciones de codigo que necesitan de un nivel de respuesta excesivamente alto, algun lenguaje que se ajuste a esas necesidades como ser bajo nivel, y en las partes menos demandantes utilizar lenguajes de mas alto nivel y con capas de abstracci\'on que permitan que la productividad sea mayor en el equipo de desarrollo. Como ejemplo, podemos hablar de un backend en alguna aplicaci\'on cliente-servidor, en el cual tendremos que la parte "pesada y demandante" la va a ejecutar el servidor, por tanto esta ser\'a la parte que estar\'a desarrollada en C o Assembler, por ejemplo, y luego el cliente, que basicamente estar\'a funcionando como una interfaz para la carga, puede utilizar lenguajes de mucho mas alto nivel como pueden ser C++, Java, Python, Ruby etc, que contienen capas de abstraccion que facilitan su comprensi\'on y manejo. 
+
+
+%==========Bibliografia===================================
+\newpage
+\begin{thebibliography}{9}
+	\bibitem{comppth} 
+	\textsc{Alfred V. Aho; Monica S. Lam; Ravi Sethi; Jeffrey D. Ullman}
+	\textit{Compiladores: principios, t\'ecnicas y herramientas}, Segunda Edici\'on. 
+	Pearson Educaci\'on, M\'exico, 2008. \textsc{isbn: 978-970-26-1133-2}.
+
+
+	\bibitem{comintp} 
+	\textsc{Alfonseca Moreno, M.; De la Cruz Echeand\'ia, M.; Ortega de la Puente, A.; Pulido Ca\~{n}abate, E}
+	\textit{Compiladores e Int\'erpretes: teor\'ia y pr\'actica}. 
+	Pearson Educaci\'on, S.A, Madrid, 2006. \textsc{isbn 10: 84-205-5031-0; isbn 13: 978-84-205-5031-2}
+\end{thebibliography}
+\end{document}
