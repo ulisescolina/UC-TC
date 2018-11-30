@@ -1,0 +1,80 @@
+\pagenumbering{arabic}
+\chapter{Estado de la Cuestión}%
+\label{sec:estadodelacuestion}
+
+\section{Problemática}
+\label{sec:problematica}
+% Posibles ventajas que aporta el uso de UML
+En el campo del desarrollo de software el advenimiento de notaciones como UML
+generaron un nuevo paradigma para la implementación de software, si bien esta
+notación no es una idea nueva, por el hecho de que tiene sus inicios en la decada de los
+1990 siendo la idea principal del mismo, el modelado de sistemas de software en
+varios niveles de abstracción  \cite{chaudron2017}, además considerandose por
+estudios como la herramienta de notación para modelado de software dominante
+\cite{aldaeej2016} aunque usado predominantemente de manera informal y que las
+actividades realcionadas al ámbito tienden a ser
+más fáciles en un desarrollo con un enfoque en el modelado \cite{forward2010}
+con la capacidad de además de tener beneficios dentro del entorno de desarrollo
+dado al nivel de expresión que se tiene en las
+notaciones gráficas comparadas con las formas textuales de expresión
+\cite{rumpe2004}.
+
+% Cuestiones por las cuales el uso de UML no siempre sucede
+% dentro del desarrollo de Software
+A pesar de lo mencionado, encuestas realizadas en uno de los estudios que trata
+a UML como una notación dominante dentro del desarrollo de software realizada años
+atras, muestran que desarrolladores prefieren centrar el trabajo en vastas
+cantidad de líneas de código, raramente mirando diagramas, y mucho menos
+confeccionándolos o editándolos, posibles razones para esto se pueden para este
+comportamiento se descubre en \cite{bente2006} en donde se identifican cuatro
+razones por las cuales los efectos positivos de UML pueden verse reducidos,
+aunque para el presente trabajo se puede hacer hincapié en tres de los
+mencionados:
+\textit{la no-factibilidad de realizar ingenieria inversa en codigo heredado},
+\textit{costo de entrenamiento del equipo} y \textit{los requerimientos no
+estaban distribuidos en unidades funcionales del sistema}.
+
+En el mismo estudio, se consultó cuáles son las cuestiones de trabajar con el
+desarrollo orientado a modelos que lo hacen difícil de tratar o sean la razon
+por la cual no se modele mucho. Las razones principales fueron:
+\begin{enumerate}
+\item \textit{Los modelos se desactualizan con respecto al código},
+es decir no se encuentra un flujo de trabajo que contemple a ambas
+actividades tal que estas dos avancen a la par, sino que se deben
+realizar por separado, causando así que el modelo quede desactualizado
+con frecuencia.
+\item \textit{Los modelos no son intercambiables fácilmente}, aquí se habla de la
+dificultad de, nuevamente, encontrar un flujo de trabajo que permita el paso de
+los modelos de forma más ``natural''.
+\item \textit{Las herramientas para modelado son pesadas}, haciendo alusión a los
+recursos computacionales en los cuales se debe incurrir para utilizar dichas
+herramientas.
+\item \textit{El código generado desde una herramienta no es de mi agrado}.
+\item \textit{Crear y modificar un modelo es lento}.
+\end{enumerate}
+
+Además de la encuesta anterior, también se realizó
+una centrándose en el desarrollo \textit{centrado en la codificación}, los
+siguientes fueron los mayores inconvenientes identificados por los desarrolladores.
+
+\begin{enumerate}
+	\item Ver de ``un pantallazo'' todo el diseño es un problema, una forma de
+		transmitir la dificultad que se tiene de brindar una visión a un alto nivel
+		del proyecto, lo cual lleva al tercer punto de la lista.
+	\item Comportamiento del sistema difícil de entender.
+	\item La calidad del código se degrada con el tiempo.
+	\item Muy dificil reestructurar el proyecto.
+	\item Cabios de codigo pueden implementar bugs.
+\end{enumerate}
+
+
+
+\section{Lenguaje Específico de Dominio}
+\label{sub:introestadocuestion}
+Un lenguaje especifico de dominio (DSL) es un lenguaje de software el cual se
+especializa en abarcar un problema dentro de la ingeniería en particular, las
+cuales son características para un dominio de aplicación, éste, se basa en
+abstracciones alineadas a este dominio y provee una sintaxis propicia para
+aplicar estas abstracciones de forma efectiva \cite{sobernig2015}.
+
+
