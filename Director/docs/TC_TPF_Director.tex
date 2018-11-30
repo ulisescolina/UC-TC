@@ -1,0 +1,52 @@
+\documentclass{report}
+\renewcommand{\bibname}{Referencias}
+\renewcommand\contentsname{\'Indice de Conten\'ido}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[spanish]{babel}
+\usepackage[style=ieee]{biblatex}
+\addbibresource{TC_TPF_Director.bib}
+
+\title{\textsc{Director}\\Teoría de la Computación}
+\author{Ulises C. Ramirez [ulir19@gmail.com, ulisescolrez@gmail.com]\\Héctor J.
+Chripczuk [hectorejch@gmail.com]}
+\date{01 de Noviembre, 2018}
+\begin{document}
+\maketitle
+\pagenumbering{gobble}
+\newpage
+\section*{Versionado}
+Para el corriente documento se est\'a llevando un versionado a fin de mantener
+un respaldo del trabajo y adem\'as proveer a la c\'atedra o a cualquier
+interesado la posibilidad de leer el material en la \'ultima versi\'on disponible.\\
+
+\begin{center}
+  \textsc{Repositorio}: \textit{https://github.com/ulisescolina/UC-TC}
+\end{center}
+
+\hfill--\textsc{Equipo Director}
+\tableofcontents
+\pagenumbering{gobble}
+\newpage
+
+% === Inicio del Cuerpo del Documento === %
+\pagenumbering{arabic}
+
+% Compilado para la seccion que presenta un poco de la investigacion que
+% soporta el desarrollo de una herramienta como Director
+\input{estado_de_la_cuestion/principal.tex}
+
+\chapter{Problema}
+\label{sec:problema}
+Descripcion del problema que se pretende mitigar con el lenguaje
+
+% Compilado para la sección dedicada al lenguaje
+\input{director/principal.tex}
+
+% === Bilbiografia === %
+\newpage
+\printbibliography[title={Referencias}]
+\end{document}
