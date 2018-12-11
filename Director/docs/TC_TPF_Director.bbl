@@ -1,0 +1,465 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{chaudron2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f0f2ea2b3e0fa1d2947a3c0035027693}{%
+           family={Michel\bibnamedelimb R.\bibnamedelimi V.},
+           familyi={M\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Chaudron},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0f2ea2b3e0fa1d2947a3c0035027693}
+      \strng{fullhash}{f0f2ea2b3e0fa1d2947a3c0035027693}
+      \strng{bibnamehash}{f0f2ea2b3e0fa1d2947a3c0035027693}
+      \strng{authorbibnamehash}{f0f2ea2b3e0fa1d2947a3c0035027693}
+      \strng{authornamehash}{f0f2ea2b3e0fa1d2947a3c0035027693}
+      \strng{authorfullhash}{f0f2ea2b3e0fa1d2947a3c0035027693}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE/ACM 9th International Workshop on Modelling in Software Engineering}
+      \field{title}{Empirical Studies into UML in Practice: Pitfalls and Prospects}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1109/MiSE.2017.24
+      \endverb
+    \endentry
+    \entry{aldaeej2016}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9a31c9a3ea8b1304c906c73bcca04fde}{%
+           family={Aldaeej},
+           familyi={A\bibinitperiod},
+           given={Abdullah},
+           giveni={A\bibinitperiod}}}%
+        {{hash=838cdf37204a37344e65f2d020e3de42}{%
+           family={Badreddin},
+           familyi={B\bibinitperiod},
+           given={Omar},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{2851f2c68edab3228c3e3c53520399b4}
+      \strng{fullhash}{2851f2c68edab3228c3e3c53520399b4}
+      \strng{bibnamehash}{2851f2c68edab3228c3e3c53520399b4}
+      \strng{authorbibnamehash}{2851f2c68edab3228c3e3c53520399b4}
+      \strng{authornamehash}{2851f2c68edab3228c3e3c53520399b4}
+      \strng{authorfullhash}{2851f2c68edab3228c3e3c53520399b4}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE/ACM 38th International Conference on Software Engineering Companion}
+      \field{title}{Towards Promoting Design and UML Modelling Practices in the Open Source Community}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1145/2889160.2892649
+      \endverb
+    \endentry
+    \entry{forward2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=26cf9156ea9497c87906016e5040cfbb}{%
+           family={Forward},
+           familyi={F\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=46c7fc56e18bcf173de331bc7e7efceb}{%
+           family={Lethbridge},
+           familyi={L\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{03136e170a94179b6d41816515012dd9}
+      \strng{fullhash}{03136e170a94179b6d41816515012dd9}
+      \strng{bibnamehash}{03136e170a94179b6d41816515012dd9}
+      \strng{authorbibnamehash}{03136e170a94179b6d41816515012dd9}
+      \strng{authornamehash}{03136e170a94179b6d41816515012dd9}
+      \strng{authorfullhash}{03136e170a94179b6d41816515012dd9}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{5th Workshop from Code Centric to Model Centric: Evaluating the Effectiveness of MDD}
+      \field{title}{Perceptions of Software Modeling: a Survey of Software Practitioners}
+      \field{year}{2010}
+    \endentry
+    \entry{rumpe2004}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c2b5a72fd30b6844022c3e1189390301}{%
+           family={Rumpe},
+           familyi={R\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Aachen, Alemania}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c2b5a72fd30b6844022c3e1189390301}
+      \strng{fullhash}{c2b5a72fd30b6844022c3e1189390301}
+      \strng{bibnamehash}{c2b5a72fd30b6844022c3e1189390301}
+      \strng{authorbibnamehash}{c2b5a72fd30b6844022c3e1189390301}
+      \strng{authornamehash}{c2b5a72fd30b6844022c3e1189390301}
+      \strng{authorfullhash}{c2b5a72fd30b6844022c3e1189390301}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Language, Concepts, Methods}
+      \field{title}{Modelling With UML}
+      \field{year}{2004}
+      \verb{doi}
+      \verb 10.1007/978-3-319-33933-7
+      \endverb
+    \endentry
+    \entry{bente2006}{article}{}
+      \name{author}{4}{}{%
+        {{hash=25cd486853e6e2db64f379e001b1c324}{%
+           family={Anda},
+           familyi={A\bibinitperiod},
+           given={Bente},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c7f74ac13897a349c2eacff8333a13e2}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8d934701089832554f70d73f67c2d9bd}{%
+           family={Gullesen},
+           familyi={G\bibinitperiod},
+           given={Ingolf},
+           giveni={I\bibinitperiod}}}%
+        {{hash=39d3c78b02d3c5c29136c316a1506e69}{%
+           family={Thorsen},
+           familyi={T\bibinitperiod},
+           given={Hanne\bibnamedelima Kristin},
+           giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{66e46a3335b1d32c22ed6e9017d1ccfd}
+      \strng{fullhash}{3018141cbbd3c2df702fa06192482a5a}
+      \strng{bibnamehash}{3018141cbbd3c2df702fa06192482a5a}
+      \strng{authorbibnamehash}{3018141cbbd3c2df702fa06192482a5a}
+      \strng{authornamehash}{66e46a3335b1d32c22ed6e9017d1ccfd}
+      \strng{authorfullhash}{3018141cbbd3c2df702fa06192482a5a}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Empirical Software Engineering}
+      \field{title}{Experience from Introducing UML-based Development in a Large Safety-Critical Project}
+      \field{year}{2006}
+      \verb{doi}
+      \verb 10.1007/s10664-006-9020-6
+      \endverb
+    \endentry
+    \entry{mdsd}{book}{}
+      \name{author}{2}{}{%
+        {{hash=a4513d5be3014f534949062cc39b03af}{%
+           family={Stahl},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=326d0052e587ae222b66a964c0246aed}{%
+           family={Völter},
+           familyi={V\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {England}%
+      }
+      \list{publisher}{2}{%
+        {John Wiley}%
+        {Sons, Ltd}%
+      }
+      \strng{namehash}{6261b871bcd9f580623147add40fbdda}
+      \strng{fullhash}{6261b871bcd9f580623147add40fbdda}
+      \strng{bibnamehash}{6261b871bcd9f580623147add40fbdda}
+      \strng{authorbibnamehash}{6261b871bcd9f580623147add40fbdda}
+      \strng{authornamehash}{6261b871bcd9f580623147add40fbdda}
+      \strng{authorfullhash}{6261b871bcd9f580623147add40fbdda}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Technology, Engineering, Management}
+      \field{title}{Model-Driven Software Development}
+      \field{year}{2006}
+      \field{pages}{3\bibrangedash 27}
+      \range{pages}{25}
+    \endentry
+    \entry{poole2001}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ad5ed73c05c867e917fe9d39899914fd}{%
+           family={Poole},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad5ed73c05c867e917fe9d39899914fd}
+      \strng{fullhash}{ad5ed73c05c867e917fe9d39899914fd}
+      \strng{bibnamehash}{ad5ed73c05c867e917fe9d39899914fd}
+      \strng{authorbibnamehash}{ad5ed73c05c867e917fe9d39899914fd}
+      \strng{authornamehash}{ad5ed73c05c867e917fe9d39899914fd}
+      \strng{authorfullhash}{ad5ed73c05c867e917fe9d39899914fd}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ECOOP, Workshop on Metamodeling and Adaptative Object Models}
+      \field{title}{Model Driven Architecture: Vision, Standards and Emerging Technologies}
+      \field{year}{2001}
+    \endentry
+    \entry{sobernig2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b48dea24b74042b39ccd0c1f3b2663d2}{%
+           family={Sobernig},
+           familyi={S\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ae81df72130bd1570204307ab48f5ba3}{%
+           family={Hoisl},
+           familyi={H\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+        {{hash=27601f166f373b1c925b1ee0c34f7022}{%
+           family={Strembeck},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8cf3032b70c3eb50443a39f15860128c}
+      \strng{fullhash}{8cf3032b70c3eb50443a39f15860128c}
+      \strng{bibnamehash}{8cf3032b70c3eb50443a39f15860128c}
+      \strng{authorbibnamehash}{8cf3032b70c3eb50443a39f15860128c}
+      \strng{authornamehash}{8cf3032b70c3eb50443a39f15860128c}
+      \strng{authorfullhash}{8cf3032b70c3eb50443a39f15860128c}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Systems and Software}
+      \field{title}{Extracting Reusable Design Desicions for UML-Based Domain-Specific Languages: A Multi-Method Study}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1016/j.jss.2015.11.037
+      \endverb
+    \endentry
+    \entry{nguyen2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c3dd4f0086dcc368905a11af2ca15946}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Viet\bibnamedelima Cuong},
+           giveni={V\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=70735aadc8f9ce422e4f277fb697a585}{%
+           family={Qafmolla},
+           familyi={Q\bibinitperiod},
+           given={Xhevi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=4129a26c7d5e31a1d449cbf8e036b21e}{%
+           family={Richta},
+           familyi={R\bibinitperiod},
+           given={Karel},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{029a99533c5049af7218cd3a6544351c}
+      \strng{fullhash}{029a99533c5049af7218cd3a6544351c}
+      \strng{bibnamehash}{029a99533c5049af7218cd3a6544351c}
+      \strng{authorbibnamehash}{029a99533c5049af7218cd3a6544351c}
+      \strng{authornamehash}{029a99533c5049af7218cd3a6544351c}
+      \strng{authorfullhash}{029a99533c5049af7218cd3a6544351c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Department of Computer Science and Engineering, Faculty of Electrical Engineering, Czech Technical University}
+      \field{number}{8}
+      \field{title}{Domain Specific Language Approach on Model-Driven Development of Web Services}
+      \field{volume}{11}
+      \field{year}{2014}
+    \endentry
+    \entry{mazanec2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=347f82606a8e5ea94a2d2757d62a814e}{%
+           family={Mazanec},
+           familyi={M\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a825c3c4c31a834569ef0dfabe927435}{%
+           family={Ond{ř}ej},
+           familyi={O\bibinitperiod},
+           given={Macek},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5dfab21b58c0da44e018fecd3ee61636}
+      \strng{fullhash}{5dfab21b58c0da44e018fecd3ee61636}
+      \strng{bibnamehash}{5dfab21b58c0da44e018fecd3ee61636}
+      \strng{authorbibnamehash}{5dfab21b58c0da44e018fecd3ee61636}
+      \strng{authornamehash}{5dfab21b58c0da44e018fecd3ee61636}
+      \strng{authorfullhash}{5dfab21b58c0da44e018fecd3ee61636}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Department of Computer Science, FEL, Czech Technical University}
+      \field{title}{On General-Purpose Textual Modeling Languages}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+    \endentry
+    \entry{umple-official}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9ad2a5dded34ca6996adb2b85a03fe43}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={Umple},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad2a5dded34ca6996adb2b85a03fe43}
+      \strng{fullhash}{9ad2a5dded34ca6996adb2b85a03fe43}
+      \strng{bibnamehash}{9ad2a5dded34ca6996adb2b85a03fe43}
+      \strng{authorbibnamehash}{9ad2a5dded34ca6996adb2b85a03fe43}
+      \strng{authornamehash}{9ad2a5dded34ca6996adb2b85a03fe43}
+      \strng{authorfullhash}{9ad2a5dded34ca6996adb2b85a03fe43}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Umple}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://cruise.site.uottawa.ca/umple/
+      \endverb
+      \verb{url}
+      \verb http://cruise.site.uottawa.ca/umple/
+      \endverb
+    \endentry
+    \entry{garzon2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bf738e60e967e088be3f711688e4f6b7}{%
+           family={Garzón},
+           familyi={G\bibinitperiod},
+           given={Miguel\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=910be5ecbfeb877b3e54aaa927b07f26}{%
+           family={Aljamaan},
+           familyi={A\bibinitperiod},
+           given={Hamoud},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f6573147d3dd0a8f183f033957fe8c8b}{%
+           family={Lethbridge},
+           familyi={L\bibinitperiod},
+           given={Timothy\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c964ef3cf9e31d4e20837252dd23992f}{%
+           family={Bradeddin},
+           familyi={B\bibinitperiod},
+           given={Omar},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b3e9e4a652a4b55661c7a6104d140ed}
+      \strng{fullhash}{b092007b8cec2d957e1f0871620cc3f9}
+      \strng{bibnamehash}{b092007b8cec2d957e1f0871620cc3f9}
+      \strng{authorbibnamehash}{b092007b8cec2d957e1f0871620cc3f9}
+      \strng{authornamehash}{0b3e9e4a652a4b55661c7a6104d140ed}
+      \strng{authorfullhash}{b092007b8cec2d957e1f0871620cc3f9}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reverse Engineering of Object-Oriented Code into Umple using an incremental and Rule-Based Approach}
+      \field{year}{2014}
+    \endentry
+    \entry{lethbridge2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9ff06f4186845c732f73b31ecf1409d7}{%
+           family={Lethbridge},
+           familyi={L\bibinitperiod},
+           given={Timoty\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=26cf9156ea9497c87906016e5040cfbb}{%
+           family={Forward},
+           familyi={F\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=838cdf37204a37344e65f2d020e3de42}{%
+           family={Badreddin},
+           familyi={B\bibinitperiod},
+           given={Omar},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{27ce774de0cfbcbc49510b86da6f119b}
+      \strng{fullhash}{27ce774de0cfbcbc49510b86da6f119b}
+      \strng{bibnamehash}{27ce774de0cfbcbc49510b86da6f119b}
+      \strng{authorbibnamehash}{27ce774de0cfbcbc49510b86da6f119b}
+      \strng{authornamehash}{27ce774de0cfbcbc49510b86da6f119b}
+      \strng{authorfullhash}{27ce774de0cfbcbc49510b86da6f119b}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Working Conference on Reverse Engineering}
+      \field{title}{Umplification: Refactoring to Incrementally add Abstraction to a Program}
+      \field{volume}{17}
+      \field{year}{2010}
+    \endentry
+    \entry{telosys}{online}{}
+      \name{author}{1}{}{%
+        {{hash=db4f5f7fbf7f2866315338eedb690f7d}{%
+           family={Guérin},
+           familyi={G\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{db4f5f7fbf7f2866315338eedb690f7d}
+      \strng{fullhash}{db4f5f7fbf7f2866315338eedb690f7d}
+      \strng{bibnamehash}{db4f5f7fbf7f2866315338eedb690f7d}
+      \strng{authorbibnamehash}{db4f5f7fbf7f2866315338eedb690f7d}
+      \strng{authornamehash}{db4f5f7fbf7f2866315338eedb690f7d}
+      \strng{authorfullhash}{db4f5f7fbf7f2866315338eedb690f7d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Telosys: the Concept of Lightweight Model for Code Generation}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://modeling-languages.com/telosys-tools-the-concept-of-lightweight-model-for-code-generation/
+      \endverb
+      \verb{url}
+      \verb https://modeling-languages.com/telosys-tools-the-concept-of-lightweight-model-for-code-generation/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,5 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'TC_TPF_Director.bib.blg'
+[24] biber:313> INFO - === mar dic 11, 2018, 09:18:00
+[52] Utils.pm:209> ERROR - Cannot find control file 'TC_TPF_Director.bib.bcf'! - Did latex run successfully on your .tex file before you ran biber?
+[52] Biber.pm:114> INFO - ERRORS: 1
