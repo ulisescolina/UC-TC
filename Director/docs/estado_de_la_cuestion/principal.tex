@@ -2,7 +2,7 @@
 \chapter{Estado de la Cuestión}%
 \label{sec:estadodelacuestion}
 
-\section{Problemática}
+\section{Introducción}
 \label{sec:problematica}
 % Posibles ventajas que aporta el uso de UML
 En el campo del desarrollo de software el advenimiento de notaciones como UML
@@ -38,20 +38,20 @@ En el mismo estudio, se consultó cuáles son las cuestiones de trabajar con el
 desarrollo orientado a modelos que lo hacen difícil de tratar o sean la razon
 por la cual no se modele mucho. Las razones principales fueron:
 \begin{enumerate}
-\item \textit{Los modelos se desactualizan con respecto al código},
-es decir no se encuentra un flujo de trabajo que contemple a ambas
-actividades tal que estas dos avancen a la par, sino que se deben
-realizar por separado, causando así que el modelo quede desactualizado
-con frecuencia.
-\item \textit{Los modelos no son intercambiables fácilmente}, aquí se habla de la
-dificultad de, nuevamente, encontrar un flujo de trabajo que permita el paso de
-los modelos de forma más ``natural''.
-\item \textit{Las herramientas para modelado son pesadas}, haciendo alusión a los
-recursos computacionales en los cuales se debe incurrir para utilizar dichas
-herramientas.
-\item \textit{El código generado desde una herramienta no es de mi agrado}.
-\item \textit{Crear y modificar un modelo es lento}.
-\end{enumerate}
+	\item \textit{Los modelos se desactualizan con respecto al código},
+		es decir no se encuentra un flujo de trabajo que contemple a ambas
+		actividades tal que estas dos avancen a la par, sino que se deben
+		realizar por separado, causando así que el modelo quede desactualizado
+		con frecuencia.
+	\item \textit{Los modelos no son intercambiables fácilmente}, aquí se habla de la
+		dificultad de, nuevamente, encontrar un flujo de trabajo que permita el paso de
+		los modelos de forma más ``natural''.
+	\item \textit{Las herramientas para modelado son pesadas}, haciendo alusión a los
+		recursos computacionales en los cuales se debe incurrir para utilizar dichas
+		herramientas.
+		\item \textit{El código generado desde una herramienta no es de mi agrado}.
+		\item \textit{Crear y modificar un modelo es lento}.
+	\end{enumerate}
 
 Además de la encuesta anterior, también se realizó
 una centrándose en el desarrollo \textit{centrado en la codificación}, los
@@ -67,14 +67,115 @@ siguientes fueron los mayores inconvenientes identificados por los desarrollador
 	\item Cabios de codigo pueden implementar bugs.
 \end{enumerate}
 
+% Luego describir sus bases teóricas
+%  DSL, DSML, MDx y la importancia de cada una
+\section{Desarrollo de Software Dirigido por Modelos}
+\label{sec:mdsd}
+El desarrollo de software dirigido por modelos (MDSD, de ahora en mas, por sus
+siglas en inglés) como se menciona en \cite{mdsd} , surge a partir de la popularización de UML,
+el uso del mismo, sin embargo, solamente se restringía a la confección de
+documentación, debido a motivos ya mencionados, el acercamiento de que ofrece
+MSDS es enteramente diferente, la parte ``dirigido'' (Driven, en MDSD),
+enfatiza la importancia y el rol central que le da este paradigma al modelo
+éste ya no solamente constituye
+la documentación del software, sino que es considerado igual a código, este es
+comparable a campos de alta especialidad, dada una de las características del
+acercamiento, esta es que apunta a la realización de abstracciones específicas de
+dominio y a hacer estas abstracciones accesibles a través del modelado, ésta
+característica permite la automatización de la implementación de código,
+haciendo posible a la vez el incremento en la productividad y la mantenibilidad
+de los sistemas.
+
+Para que se pueda aplicar el concepto de ``modelo específico de dominio'' se
+deben tener en cuenta tres requerimientos:
+\begin{itemize}
+	\item \textit{Lenguajes de dominio específico}, para la formulación de modelos.
+	\item Lenguajes que puedan expresar transformaciones ``modelo-código''.
+	\item \textit{Compiladores, generadores o transformadores}, para generar el codigo
+		ejecutable en varias plataformas.
+\end{itemize}
+
+\section{Arquitectura Dirigida por Modelos}
+\label{sec:arquitectura_dirigida_por_modelos}
+La arquitectura dirigida por modelos (MDA, por sus siglas en ingles) es una
+iniciativa introducida por el Object Management Group, con el proposito de
+brindar una forma estandarizada para la especificación e interoperabilidad de
+sistemas basado en el uso formal de modelos \cite{poole2001}, en el núcleo de
+MDA se encuentran otros estándares implementados por el OMG: the Unified
+Modeling Language (UML), Meta Object Facility (MOF), XML Metadata Interchange
+(XMI) y el Common Warehouse Metamodel (CWM). Al igual que el MDSD, MDA, ubica
+los modelos de sistemas en el nucleo del problema de interoperabilidad lo cual
+hace que la implementación del sistema sea independiente de la técnología.
+
+La OMG, promueve MDA como un \textit{marco de trabajo arquitectónico para el
+desarrollo de software}, el cual esta construido alrededor de un numero de
+especificaciones detalladas de la misma organización que son usadas ampliamente
+en la comunidad de desarrolladores.
+
+Esto puede hacer pensar que $MDA=MDSD$, lo cual sería correcto hasta cierto
+punto, en principio, el acercamiento de MDA es similar al de MDSD, pero difiere
+en detalles, por ejemplo, éste, tiende a ser mas restrictivo, enfocándose
+primariamente en lenguajes de modelado basados en UML \cite{mdsd}.
 
 
 \section{Lenguaje Específico de Dominio}
-\label{sub:introestadocuestion}
+\label{sec:dsl}
 Un lenguaje especifico de dominio (DSL) es un lenguaje de software el cual se
 especializa en abarcar un problema dentro de la ingeniería en particular, las
 cuales son características para un dominio de aplicación, éste, se basa en
 abstracciones alineadas a este dominio y provee una sintaxis propicia para
 aplicar estas abstracciones de forma efectiva \cite{sobernig2015}.
+
+La implementación de un DSL permite mitigar ciertos aspectos que se vieron como
+desventaja al inicio, algunos mencionados en \cite{nguyen2014} incluyen la
+reutilización de código, promueve la legibilidad y el entendimiento debido al alto
+nivel de abstracción del mismo, permite a que usuarios con nivel bajo en
+programación la creación de modelos para programas siempre y cuando estos
+posean el conocimiento del dominio, más verificaciones en la sintáxis y
+semantica que un lenguaje de modelado general; aunque también se enfatizan
+desventajas que estos insertan en el desarrollo, curva de aprendizaje
+necesaria y la falta de personas letradas en el DSL, ya que es mas probable que
+las personas sepan como resolver los problemas adoptando un lenguaje de
+propósito general el cual ya conocen.
+
+Algunos autores definen las características deseables de un DSL
+\cite{mazanec2012}:
+\begin{itemize}
+	\item La capacidad de describir todo el software.
+	\item La capacidad de describir varios niveles de abstracción.
+	\item Legibilidad y Simplicidad del lenguaje.
+	\item Expresiones no Ambiguas.
+	\item Soporte e Integrabilidad.
+\end{itemize}
+
+% Aca se puede seguir con el paper de Umplification, demostrando que se
+% implemento una herramienta que ayuda a las problematicas planteadas.
+\section{Ejemplos de Implementaciones}
+
+\subsection{Umple}
+Un caso con bastante aceptación dentro del desarrollo de software llevado
+mediante modelos es la herramienta Umple {\cite{umple-official}}, la cual tiene
+como objetivo mitigar varios de los inconvenientes enumerados anteriormente, con
+respecto a la renuencia de los equipos de trabajo para el modelado y al
+problema que cada desarrollador ve en un desarrollo centrado en la
+codificación \cites{aldaeej2016}{garzon2014}, esto a través de la aplicación de
+refactorizaciones al código lo cual da como resultado un programa equivalente
+al original, con el agregado de que este puede ser renderizado y editado
+mediante herramientas UML \cite{lethbridge2010}, siguiendo diferentes
+paradigmas dentro del desarrollo de software tales como el uso de un Lenguaje
+DSL (\texttt{Sección \ref{sec:dsl}}).
+
+\subsection{Telosys}
+El análisis realizado en \cite{telosys} lo muestra como una herramienta simple
+(que utiliza cuestiones tales como los DSL para la creación del modelo),
+provee la habilidad de la generación de código teniendo como base un modelo,
+el cual se le provee a la misma mediante una interfáz de línea de comandos, su
+objetivo es proveer una alternativa al clásico ``Primero el UML'' dentro del
+desarrollo, esto significa, que en vez de invertir el tiempo del
+desarrollador al inicio del proyecto documentando diagramas UML, teniendo como
+principio lo que se expuso en la \texttt{Sección
+\ref{sec:arquitectura_dirigida_por_modelos}} se
+tiene que el modelo \textbf{es} el código, es decir, que los límites que separan
+la documentación de la codificación se desvanecen.
 
 
