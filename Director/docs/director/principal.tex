@@ -2,18 +2,47 @@
 \chapter{Director}
 \label{sec:director}
 
+\section{Problematica}
+\label{sec:problema}
+Descripcion del problema que se pretende mitigar con el lenguaje
+
+El presente trabajo pretende presentar una herramienta que aplique los
+conceptos vistos en la \texttt{Sección \ref{sec:mdsd}} referentes a MDSD,
+focalizando el uso de modelos UML, tales restricciones determinan que se siguen
+los patrones relacionados a MDA como se acotó en la
+\texttt{Sección \ref{sec:arquitectura_dirigida_por_modelos}}, como se menciona
+en la sección para MSDS, para la implementación de tales técnicas, uno de los
+requisitos es la definición de un Lenguaje Específico de Dominio, (tratado en
+la \texttt{Sección \ref{sec:dsl}}).
+
+Director, proveera de un lenguaje especifico de dominio que permite el modelado de
+sistemas de información orientados a objetos, en esta primera iteración del
+mismo, se pretende incluir las entidades utilizadas en la realización de
+gráficas de Diagramas de Clase pertenecientes a la familia de Diagramas UML.
+
 \section*{Estructura del Lenguaje}
+A continuación, se presentarán en diferentes secciones los componentes que
+hacen al lenguaje, estos se ubicaran según el nivel de dependencia de cada uno
+con respecto a los demás componentes, de esta manera, compartimentando la
+responsabilidad se hace a una explicación mas simplificada de la herramienta.
+
+Se pueden esperar, para cada sección que describe a un elemento del lenguaje,
+las siguientes notaciones que formalizan a la propuesta del presente
+documento: \texttt{Gramática libre de contexto en formato BNF (Backus-Naur)},
+\texttt{Expresiones Regulares}, \texttt{Autómatas Finitos}.
 
 \input{director/palabras_reservadas.tex}
 
 \input{director/simbolos_especiales.tex}
 
-\input{director/expresiones_regulares.tex}
+\input{director/comun/principal.tex}
 
-\input{director/automatas_finitos.tex}
+\input{director/comentario/principal.tex}
 
-\input{director/analizador_sintactico.tex}
+\input{director/atributo/principal.tex}
 
-\input{director/arboles_de_analisis_sintactico.tex}
+\input{director/metodo/principal.tex}
 
-\input{director/diagrama_de_sintaxis.tex}
+\input{director/clase/principal.tex}
+
+\input{director/relacion/principal.tex}
