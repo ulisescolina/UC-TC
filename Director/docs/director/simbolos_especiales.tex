@@ -1,2 +1,33 @@
 \section{Símbolos Especiales}
-\label{sub:simbolosespeciales}
+\label{sec:simbolosespeciales}
+
+% introduccion a los simbolos especiales
+En Director, varios de los simbolos especiales permiten hacer uso de las
+confección gráficas de UML para la confección del modelo, por ejemplo, se
+tienen varios símbolos que tienen una contraparte en las palabras reservadas
+para la descripcion de algun método/atributo. En el \texttt{Cuadro
+\ref{c:s_especiales}} se presentan los símbolos que componen al lenguaje y una
+breve explicación de cada uno de ellos.
+
+\begin{table}[ht]
+\centering
+\caption{Símbolos especiales}
+\begin{tabular}{c p{9cm} }
+\hline
+	Símbolo & Descripción \\ \hline
+	+ & Visibilidad de un método/atributo, equivalente a public\\
+	- & Visibilidad de un método/atributo, equivalente a private\\
+  \# & Visibilidad de un método/atributo, equivalente a protected\\
+	/ & Visibilidad de un método/atributo, equivalente a derivate\\
+$\sim$ & Visibilidad de un método/atributo, equivalente a package\\
+	: & Permite la asignación de un tipo de dato a un método/atributo\\
+$\#\#$ & Comentarios de línea dentro del modelo \\
+$\#\{$ & Inicio comentarios multilínea dentro del modelo\\
+$\}\#$ & Fin comentarios multilínea dentro del modelo\\
+$\# +$ & Definición de metainformación para el modelo\\
+$//$ & Comentario de línea para el código resultante del modelo\\
+$/*$ & Inicio comentarios multilínea para el codigo resultante del modelo\\
+$*/$ & Fin comentarios multilínea para el codigo resultante del modelo\\ \hline
+\end{tabular}
+\label{c:s_especiales}
+\end{table}
