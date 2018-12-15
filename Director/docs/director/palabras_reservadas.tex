@@ -1,2 +1,260 @@
 \section{Palabras Reservadas}
-\label{sub:palabrasreservadas}
+\label{sec:palabrasreservadas}
+
+Aquí se describirán las palabras utilizadas como tokens en el lenguaje
+propuesto, estas permiten, desde el establecimiento de relaciones
+entre entidades de un modelo, hasta la habilidad de indicar el tipo de devolución
+de un método. A continuación se proporciona una lista de palabras reservadas
+con su correspondiente explicación:
+
+\begin{description}[align=right,labelwidth=2.5cm]
+
+\item [class] Esta palabra se utiliza como token para la definición de una clase,
+	es un componente de alto nivel dentro del lenguaje.
+
+	Ejemplo:
+		\begin{lstlisting}
+		class Persona {
+			...
+			}
+		\end{lstlisting}
+
+\item [relationships] Palabra utilizada para establecer relaciones inter-clase
+	dentro de un modelo, esta es una entidad de alto nivel en el lenguaje que
+	permite la relación mediate \textit{herencia}, \textit{asociación}, etc,
+	entre clases de un modelo.
+
+	Ejemplo:
+		\begin{lstlisting}
+		...
+		relationships {
+			...
+			}
+		\end{lstlisting}
+
+\item [void] Token que permite establecer el tipo de la devolución de un
+	método, éste indica que el método no hace ninguna	devolución.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> metodo():void
+			...
+		\end{lstlisting}
+
+\item [integer] Token que permite indicar el tipo de dato devuelto por un metodo, o
+	el tipo de dato de un atributo. Hace referencia al tipo de
+	datos entero; equivalente en un lenguaje como Java, \texttt{int}.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:integer
+			<visibilidad> metodo():integer
+			...
+		\end{lstlisting}
+
+\item [double] Token que permite indicar el tipo de dato devuelto por un metodo, o
+	el tipo de dato de un atributo. Hace referencia al tipo de
+	datos doble; equivalente en un lenguaje como Java, \texttt{double}.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:double
+			<visibilidad> metodo():double
+			...
+		\end{lstlisting}
+
+\item [float] Token que permite indicar el tipo de dato devuelto por un metodo, o
+	el tipo de dato de un atributo. Hace referencia al tipo de
+	datos con presición flotante; equivalente en un lenguaje como Java,
+	\texttt{float}.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:float
+			<visibilidad> metodo():float
+			...
+		\end{lstlisting}
+
+\item [long] Token que permite indicar el tipo de dato devuelto por un metodo, o
+	el tipo de dato de un atributo. Hace referencia al tipo de
+	datos largo; equivalente en un lenguaje como Java, \texttt{long}.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:long
+			<visibilidad> metodo():long
+			...
+		\end{lstlisting}
+
+\item [boolean] Token que permite indicar el tipo de dato devuelto por un metodo, o
+	el tipo de dato de un atributo. Hace referencia al tipo de
+	datos booleanos; equivalente en un lenguaje como Java, \texttt{boolean}.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:boolean
+			<visibilidad> metodo():boolean
+			...
+		\end{lstlisting}
+
+\item [string] Token que permite indicar el tipo de dato devuelto por un metodo, o
+	el tipo de dato de un atributo. Hace referencia al tipo de
+	datos de cadena de caracteres ; equivalente en un lenguaje como Java, \texttt{String};
+	equivalente en C, \texttt{char[N]}.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:string
+			<visibilidad> metodo():string
+			...
+		\end{lstlisting}
+
+\item [char] Token que permite indicar el tipo de dato devuelto por un metodo, o
+	el tipo de dato de un atributo. Hace referencia al tipo de
+	datos de caracter; equivalente en un lenguaje como Java, \texttt{char}.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:char
+			<visibilidad> metodo():char
+			...
+		\end{lstlisting}
+
+\item [list] Token que permite indicar el tipo de dato devuelto por un metodo, o
+	el tipo de dato de un atributo. Hace referencia a una
+	estructura de colección reminiscente a las listas; equivalente en un lenguaje
+	como Java, \texttt{List}.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:list<tipo>
+			<visibilidad> metodo():list<tipo>
+			...
+		\end{lstlisting}
+
+\item[set] Token que permite indicar el tipo de dato devuelto por un metodo, o
+	el tipo de dato de un atributo. Hace referencia a una
+	estructura de colección reminiscente a los conjuntos; equivalente en un lenguaje
+	como Java, \texttt{Set}.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:set<tipo>
+			<visibilidad> metodo():set<tipo>
+			...
+		\end{lstlisting}
+
+\item [public] Esta palabra permite establecer la visibilidad de un elemento
+	dentro del modelo, este elemento puede ser un atributo o una clase.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			public atributo:<tipo>
+			public metodo():<tipo>
+			...
+		\end{lstlisting}
+
+\item [private] Esta palabra permite establecer la visibilidad de un elemento
+	dentro del modelo, este elemento puede ser un atributo o una clase.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			private atributo:<tipo>
+			private metodo():<tipo>
+			...
+		\end{lstlisting}
+
+\item [protected] Esta palabra permite establecer la visibilidad de un elemento
+	dentro del modelo, este elemento puede ser un atributo o una clase.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			protected atributo:<tipo>
+			protected metodo():<tipo>
+			...
+		\end{lstlisting}
+
+\item[derivate] Esta palabra permite establecer la visibilidad de un elemento
+	dentro del modelo, este elemento puede ser un atributo o una clase.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			derivate atributo:<tipo>
+			derivate metodo():<tipo>
+			...
+		\end{lstlisting}
+
+\item [package] Esta palabra permite establecer la visibilidad de un elemento
+	dentro del modelo, este elemento puede ser un atributo o una clase.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			package atributo:<tipo>
+			package metodo():<tipo>
+			...
+		\end{lstlisting}
+
+\item [@id] Esta palabra se utiliza como un modificador en el ambito de
+	los atributos de clase, este permite brindar información extra acerca del
+	atributo en cuestión, en específico, este indica que el atributo es parte del
+	identificador de la clase que lo posee.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:<tipo>{@id}
+			...
+		\end{lstlisting}
+
+\item [@readOnly] Esta palabra se utiliza como un modificador en el ambito de
+	los atributos de clase, este permite brindar información extra acerca del
+	atributo en cuestión, en específico, este indica que el atributo solo podra
+	ser accedido para lectura una vez se haya guardado.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:<tipo>{@readOnly}
+			...
+		\end{lstlisting}
+
+\item [@sequence] Esta palabra se utiliza como un modificador en el ambito de
+	los atributos de clase, este permite brindar información extra acerca del
+	atributo en cuestión, en específico, este indica que el valor que tome el
+	atributo sigue una secuencia.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:<tipo>{@sequence}
+			...
+		\end{lstlisting}
+
+\item [@unique] Esta palabra se utiliza como un modificador en el ambito de
+	los atributos de clase, este permite brindar información extra acerca del
+	atributo en cuestión, en específico, este indica que el atributo no tiene
+	duplicados.
+
+	Ejemplo:
+		\begin{lstlisting}
+		  ...
+			<visibilidad> atributo:<tipo>{@unique}
+			...
+		\end{lstlisting}
+
+\end{description}
