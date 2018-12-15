@@ -1,0 +1,23 @@
+\section{Método}
+\label{sec:comentario}
+Al igual que los atributos, los metodos, son componentes dentro del diagrama de
+clases que ayudan a la manipulación de los datos, estos brindan el
+comportamiento que es propio al objeto. El lenguaje presentado permite definir
+métodos de la siguiente manera:
+
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
+  <metodo>::=<visibilidad><nombre>"("<parametro>")" ":"<tipo>
+  <metodo>::=<visibilidad><nombre>"("<parametros>")" ":"<tipo>
+\end{lstlisting}
+
+En donde se puede decir que \texttt{parametro(s)} se define de la siguiente
+manera:
+
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
+  <parametro> ::= <nombre> ":" <tipo>
+\end{lstlisting}
+
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
+  <parametros> ::= <parametro> | <parametros>
+\end{lstlisting}
+
