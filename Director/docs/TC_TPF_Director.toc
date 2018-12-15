@@ -17,20 +17,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.5.2}Telosys}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Problema}{5}
+\contentsline {chapter}{\numberline {2}Director}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Director}{6}
+\contentsline {section}{\numberline {2.1}Problematica}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Palabras Reservadas}{6}
+\contentsline {section}{\numberline {2.2}Palabras Reservadas}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}S\IeC {\'\i }mbolos Especiales}{6}
+\contentsline {section}{\numberline {2.3}S\IeC {\'\i }mbolos Especiales}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Expresiones Regulares}{6}
+\contentsline {section}{\numberline {2.4}Definici\IeC {\'o}n de componentes comunes}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Aut\IeC {\'o}matas Finitos}{6}
+\contentsline {subsection}{\numberline {2.4.1}letra}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Analizador Sint\IeC {\'a}ctico, Gram\IeC {\'a}tica Libre de Contexto}{6}
+\contentsline {subsection}{\numberline {2.4.2}digito}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Arboles de An\IeC {\'a}lisis Sint\IeC {\'a}ctico}{6}
+\contentsline {subsection}{\numberline {2.4.3}simbolo}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Diagrama de Sint\IeC {\'a}xis}{6}
+\contentsline {subsection}{\numberline {2.4.4}texto}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.5}nombre}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.6}visibilidad}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.7}tipo}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Comentario}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.1}Comentarios Director}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Aut\IeC {\'o}mata finito}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Comentarios para Lenguaje}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Aut\IeC {\'o}mata finito}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Atributo}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.1}Aut\IeC {\'o}mata Finito}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}M\IeC {\'e}todo}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Clase}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.9}Relaci\IeC {\'o}n}{18}

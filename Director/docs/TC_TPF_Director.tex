@@ -7,6 +7,28 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{float}
+\usepackage{booktabs}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Fragmento}
+\renewcommand{\lstlistlistingname}{Índice de Fragmentos de Código}
+\lstdefinelanguage{director}{
+	morekeywords={class, relationships, void, integer, double, float, long,
+	boolean, string, char, list, set, public, private, protected, derivate,
+	package, @id, @readOnly, @sequence, @unique},
+	sensitive=false,
+	morecomment=[l]{##},
+	morestring=[b]"
+}
+\lstset{
+	language=director,
+	basicstyle=\footnotesize,
+	keywordstyle=\bfseries\ttfamily\small,
+	showstringspaces=false,
+	tabsize=2,
+	frame=single
+	}
 \usepackage[spanish]{babel}
 \usepackage[style=ieee]{biblatex}
 \addbibresource{TC_TPF_Director.bib}
@@ -30,19 +52,16 @@ interesado la posibilidad de leer el material en la \'ultima versi\'on disponibl
 
 \hfill--\textsc{Equipo Director}
 \tableofcontents
+\lstlistoflistings
 \pagenumbering{gobble}
 \newpage
 
 % === Inicio del Cuerpo del Documento === %
 \pagenumbering{arabic}
 
-% Compilado para la seccion que presenta un poco de la investigacion que
+% Compilado para la sección que presenta un poco de la investigación que
 % soporta el desarrollo de una herramienta como Director
 \input{estado_de_la_cuestion/principal.tex}
-
-\chapter{Problema}
-\label{sec:problema}
-Descripcion del problema que se pretende mitigar con el lenguaje
 
 % Compilado para la sección dedicada al lenguaje
 \input{director/principal.tex}
