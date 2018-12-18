@@ -16,11 +16,23 @@ La definición de un atributo según notacion BNF es la siguiente:
 Teniendo en cuenta que se tiene que estar en el contexto de una clase para que
 el mismo tenga sentido, a continuación un ejemplo:\\
 
-\texttt{Consigna}: \textit{se desea tener una clase que permita el manejo de
-información de una persona, la información a manejar es el nombre, apellido y
-DNI}.\\
+\begin{displayquote}
+	\texttt{Consigna}: \textit{se desea tener una clase que permita el manejo de
+	información de una persona, la información a manejar es el nombre, apellido
+	y DNI}.
+\end{displayquote}
 
-teniendo esta información se puede armar un modelo en el lenguaje director que
+Lo cual se puede representar mediante un diagrama de clase
+de la siguiente manera:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.2\linewidth]{diagramas_clases/ej_diag_clase.png}
+	\caption{Representación gráfica de la consigna mediante UML}
+	\label{fig:ej_diag_clase.png}
+\end{figure}
+
+Teniendo esta información se puede armar un modelo en el lenguaje director que
 concuerde con estos requerimientos. Dado a que por el momento unicamente se
 está tratando con los atributos no se tendrá en cuenta la declaración de la
 clase \texttt{Persona} mencionada en la consigna propuesta.
@@ -75,8 +87,8 @@ Se puede dejar expresado que el BNF, teniendo en cuenta la incorporación de lo
 demostrado quedaría de la siguiente manera:
 
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize, label=frag:bnf_atributo_restr]
-		<atributo> ::= <visibilidad> <nombre> ``:'' <tipo>
-		``{'' <modificador> ``}''
+		<atributo> ::= <visibilidad> <nombre> ":" <tipo>
+		"{" <modificador> "}"
 \end{lstlisting}
 
 \begin{lstlisting}[language=Java, basicstyle=\tiny\ttfamily, label=frag:bnf_atributo_modif]
