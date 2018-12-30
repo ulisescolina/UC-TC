@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
+% $ biblatex bbl format version 3.0 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -21,18 +21,18 @@
   \datalist[entry]{none/global//global/global}
     \entry{chaudron2017}{article}{}
       \name{author}{1}{}{%
-        {{hash=f0f2ea2b3e0fa1d2947a3c0035027693}{%
+        {{hash=0a45056804aff2c60e91970fa64bf038}{%
            family={Michel\bibnamedelimb R.\bibnamedelimi V.},
            familyi={M\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim V\bibinitperiod},
            given={Chaudron},
            giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{f0f2ea2b3e0fa1d2947a3c0035027693}
-      \strng{fullhash}{f0f2ea2b3e0fa1d2947a3c0035027693}
-      \strng{bibnamehash}{f0f2ea2b3e0fa1d2947a3c0035027693}
-      \strng{authorbibnamehash}{f0f2ea2b3e0fa1d2947a3c0035027693}
-      \strng{authornamehash}{f0f2ea2b3e0fa1d2947a3c0035027693}
-      \strng{authorfullhash}{f0f2ea2b3e0fa1d2947a3c0035027693}
+      \strng{namehash}{0a45056804aff2c60e91970fa64bf038}
+      \strng{fullhash}{0a45056804aff2c60e91970fa64bf038}
+      \strng{bibnamehash}{0a45056804aff2c60e91970fa64bf038}
+      \strng{authorbibnamehash}{0a45056804aff2c60e91970fa64bf038}
+      \strng{authornamehash}{0a45056804aff2c60e91970fa64bf038}
+      \strng{authorfullhash}{0a45056804aff2c60e91970fa64bf038}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
@@ -149,7 +149,7 @@
            familyi={G\bibinitperiod},
            given={Ingolf},
            giveni={I\bibinitperiod}}}%
-        {{hash=39d3c78b02d3c5c29136c316a1506e69}{%
+        {{hash=34c693d609dc74e2f79602b68a6c03f0}{%
            family={Thorsen},
            familyi={T\bibinitperiod},
            given={Hanne\bibnamedelima Kristin},
@@ -159,11 +159,11 @@
         {Springer}%
       }
       \strng{namehash}{66e46a3335b1d32c22ed6e9017d1ccfd}
-      \strng{fullhash}{3018141cbbd3c2df702fa06192482a5a}
-      \strng{bibnamehash}{3018141cbbd3c2df702fa06192482a5a}
-      \strng{authorbibnamehash}{3018141cbbd3c2df702fa06192482a5a}
+      \strng{fullhash}{27aa851632687991d6df4774b989e3ca}
+      \strng{bibnamehash}{27aa851632687991d6df4774b989e3ca}
+      \strng{authorbibnamehash}{27aa851632687991d6df4774b989e3ca}
       \strng{authornamehash}{66e46a3335b1d32c22ed6e9017d1ccfd}
-      \strng{authorfullhash}{3018141cbbd3c2df702fa06192482a5a}
+      \strng{authorfullhash}{27aa851632687991d6df4774b989e3ca}
       \field{sortinit}{5}
       \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
@@ -213,18 +213,18 @@
     \endentry
     \entry{poole2001}{article}{}
       \name{author}{1}{}{%
-        {{hash=ad5ed73c05c867e917fe9d39899914fd}{%
+        {{hash=9a7bc6cae242eb449852414cb710d871}{%
            family={Poole},
            familyi={P\bibinitperiod},
            given={John\bibnamedelima D.},
            giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
       }
-      \strng{namehash}{ad5ed73c05c867e917fe9d39899914fd}
-      \strng{fullhash}{ad5ed73c05c867e917fe9d39899914fd}
-      \strng{bibnamehash}{ad5ed73c05c867e917fe9d39899914fd}
-      \strng{authorbibnamehash}{ad5ed73c05c867e917fe9d39899914fd}
-      \strng{authornamehash}{ad5ed73c05c867e917fe9d39899914fd}
-      \strng{authorfullhash}{ad5ed73c05c867e917fe9d39899914fd}
+      \strng{namehash}{9a7bc6cae242eb449852414cb710d871}
+      \strng{fullhash}{9a7bc6cae242eb449852414cb710d871}
+      \strng{bibnamehash}{9a7bc6cae242eb449852414cb710d871}
+      \strng{authorbibnamehash}{9a7bc6cae242eb449852414cb710d871}
+      \strng{authornamehash}{9a7bc6cae242eb449852414cb710d871}
+      \strng{authorfullhash}{9a7bc6cae242eb449852414cb710d871}
       \field{sortinit}{7}
       \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
@@ -273,7 +273,7 @@
     \endentry
     \entry{nguyen2014}{article}{}
       \name{author}{3}{}{%
-        {{hash=c3dd4f0086dcc368905a11af2ca15946}{%
+        {{hash=08da9ef8ba1d18c7dba4d0fd7001007d}{%
            family={Nguyen},
            familyi={N\bibinitperiod},
            given={Viet\bibnamedelima Cuong},
@@ -289,12 +289,12 @@
            given={Karel},
            giveni={K\bibinitperiod}}}%
       }
-      \strng{namehash}{029a99533c5049af7218cd3a6544351c}
-      \strng{fullhash}{029a99533c5049af7218cd3a6544351c}
-      \strng{bibnamehash}{029a99533c5049af7218cd3a6544351c}
-      \strng{authorbibnamehash}{029a99533c5049af7218cd3a6544351c}
-      \strng{authornamehash}{029a99533c5049af7218cd3a6544351c}
-      \strng{authorfullhash}{029a99533c5049af7218cd3a6544351c}
+      \strng{namehash}{9ce37cb07138c70a19f16ae860ff3305}
+      \strng{fullhash}{9ce37cb07138c70a19f16ae860ff3305}
+      \strng{bibnamehash}{9ce37cb07138c70a19f16ae860ff3305}
+      \strng{authorbibnamehash}{9ce37cb07138c70a19f16ae860ff3305}
+      \strng{authornamehash}{9ce37cb07138c70a19f16ae860ff3305}
+      \strng{authorfullhash}{9ce37cb07138c70a19f16ae860ff3305}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
@@ -312,18 +312,18 @@
            familyi={M\bibinitperiod},
            given={Martin},
            giveni={M\bibinitperiod}}}%
-        {{hash=a825c3c4c31a834569ef0dfabe927435}{%
+        {{hash=9567fbe1ec964676d66a794071040dcd}{%
            family={Ond{ř}ej},
            familyi={O\bibinitperiod},
            given={Macek},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{5dfab21b58c0da44e018fecd3ee61636}
-      \strng{fullhash}{5dfab21b58c0da44e018fecd3ee61636}
-      \strng{bibnamehash}{5dfab21b58c0da44e018fecd3ee61636}
-      \strng{authorbibnamehash}{5dfab21b58c0da44e018fecd3ee61636}
-      \strng{authornamehash}{5dfab21b58c0da44e018fecd3ee61636}
-      \strng{authorfullhash}{5dfab21b58c0da44e018fecd3ee61636}
+      \strng{namehash}{a1129ae3e596106185186635f761f665}
+      \strng{fullhash}{a1129ae3e596106185186635f761f665}
+      \strng{bibnamehash}{a1129ae3e596106185186635f761f665}
+      \strng{authorbibnamehash}{a1129ae3e596106185186635f761f665}
+      \strng{authornamehash}{a1129ae3e596106185186635f761f665}
+      \strng{authorfullhash}{a1129ae3e596106185186635f761f665}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
@@ -364,7 +364,7 @@
     \endentry
     \entry{garzon2014}{article}{}
       \name{author}{4}{}{%
-        {{hash=bf738e60e967e088be3f711688e4f6b7}{%
+        {{hash=75f3fd1bab1eba1c8ec71de7487941f6}{%
            family={Garzón},
            familyi={G\bibinitperiod},
            given={Miguel\bibnamedelima A.},
@@ -374,7 +374,7 @@
            familyi={A\bibinitperiod},
            given={Hamoud},
            giveni={H\bibinitperiod}}}%
-        {{hash=f6573147d3dd0a8f183f033957fe8c8b}{%
+        {{hash=a487d817b6483086be1fa091a79e41dd}{%
            family={Lethbridge},
            familyi={L\bibinitperiod},
            given={Timothy\bibnamedelima C.},
@@ -385,12 +385,12 @@
            given={Omar},
            giveni={O\bibinitperiod}}}%
       }
-      \strng{namehash}{0b3e9e4a652a4b55661c7a6104d140ed}
-      \strng{fullhash}{b092007b8cec2d957e1f0871620cc3f9}
-      \strng{bibnamehash}{b092007b8cec2d957e1f0871620cc3f9}
-      \strng{authorbibnamehash}{b092007b8cec2d957e1f0871620cc3f9}
-      \strng{authornamehash}{0b3e9e4a652a4b55661c7a6104d140ed}
-      \strng{authorfullhash}{b092007b8cec2d957e1f0871620cc3f9}
+      \strng{namehash}{78a9b66a3553cc878c38800fbacb8b27}
+      \strng{fullhash}{c4fd6fda2eecfb79f02d1936dd7df4c1}
+      \strng{bibnamehash}{c4fd6fda2eecfb79f02d1936dd7df4c1}
+      \strng{authorbibnamehash}{c4fd6fda2eecfb79f02d1936dd7df4c1}
+      \strng{authornamehash}{78a9b66a3553cc878c38800fbacb8b27}
+      \strng{authorfullhash}{c4fd6fda2eecfb79f02d1936dd7df4c1}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
@@ -400,7 +400,7 @@
     \endentry
     \entry{lethbridge2010}{article}{}
       \name{author}{3}{}{%
-        {{hash=9ff06f4186845c732f73b31ecf1409d7}{%
+        {{hash=918671e1c25bab33f9d88f17bc342843}{%
            family={Lethbridge},
            familyi={L\bibinitperiod},
            given={Timoty\bibnamedelima C.},
@@ -416,12 +416,12 @@
            given={Omar},
            giveni={O\bibinitperiod}}}%
       }
-      \strng{namehash}{27ce774de0cfbcbc49510b86da6f119b}
-      \strng{fullhash}{27ce774de0cfbcbc49510b86da6f119b}
-      \strng{bibnamehash}{27ce774de0cfbcbc49510b86da6f119b}
-      \strng{authorbibnamehash}{27ce774de0cfbcbc49510b86da6f119b}
-      \strng{authornamehash}{27ce774de0cfbcbc49510b86da6f119b}
-      \strng{authorfullhash}{27ce774de0cfbcbc49510b86da6f119b}
+      \strng{namehash}{9e88c9e3e75dd84d043c90a655c25998}
+      \strng{fullhash}{9e88c9e3e75dd84d043c90a655c25998}
+      \strng{bibnamehash}{9e88c9e3e75dd84d043c90a655c25998}
+      \strng{authorbibnamehash}{9e88c9e3e75dd84d043c90a655c25998}
+      \strng{authornamehash}{9e88c9e3e75dd84d043c90a655c25998}
+      \strng{authorfullhash}{9e88c9e3e75dd84d043c90a655c25998}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
@@ -458,6 +458,233 @@
       \verb{url}
       \verb https://modeling-languages.com/telosys-tools-the-concept-of-lightweight-model-for-code-generation/
       \endverb
+    \endentry
+    \entry{larman2004}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e8d0ed5a8735fa1123f0390c85f00696}{%
+           family={Larman},
+           familyi={L\bibinitperiod},
+           given={Craigh},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison Wesley Professional}%
+      }
+      \strng{namehash}{e8d0ed5a8735fa1123f0390c85f00696}
+      \strng{fullhash}{e8d0ed5a8735fa1123f0390c85f00696}
+      \strng{bibnamehash}{e8d0ed5a8735fa1123f0390c85f00696}
+      \strng{authorbibnamehash}{e8d0ed5a8735fa1123f0390c85f00696}
+      \strng{authornamehash}{e8d0ed5a8735fa1123f0390c85f00696}
+      \strng{authorfullhash}{e8d0ed5a8735fa1123f0390c85f00696}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{An Introduction to Object-Oriented Analysis	and Design and Iterative Development}
+      \field{title}{Appying UML and Patterns}
+      \field{year}{2004}
+    \endentry
+    \entry{dennis2012}{book}{}
+      \name{author}{3}{}{%
+        {{hash=9da4736e8ec078ff9ba7d4ede2ab7473}{%
+           family={Dennis},
+           familyi={D\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ec593b1f8227c9e7b8070888171abbf8}{%
+           family={Wixom},
+           familyi={W\bibinitperiod},
+           given={Barbara\bibnamedelima Haley},
+           giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=591f4f139f95b146c066adeef4354989}{%
+           family={Tegarden},
+           familyi={T\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {John Wiley}%
+        {Sons, Inc.}%
+      }
+      \strng{namehash}{7488ae1124e01bbe0e60527dca160c8a}
+      \strng{fullhash}{7488ae1124e01bbe0e60527dca160c8a}
+      \strng{bibnamehash}{7488ae1124e01bbe0e60527dca160c8a}
+      \strng{authorbibnamehash}{7488ae1124e01bbe0e60527dca160c8a}
+      \strng{authornamehash}{7488ae1124e01bbe0e60527dca160c8a}
+      \strng{authorfullhash}{7488ae1124e01bbe0e60527dca160c8a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{An Object-Oriented Approachc}
+      \field{title}{System Analysis Design UML Version 2.0}
+      \field{year}{2012}
+    \endentry
+    \entry{dathan2015}{book}{}
+      \name{author}{2}{}{%
+        {{hash=79bfdf1501156fc507e3f4e89fa622a3}{%
+           family={Dathan},
+           familyi={D\bibinitperiod},
+           given={Brahma},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0442fafbf7e50d0fa9bcc25044302367}{%
+           family={Ramnath},
+           familyi={R\bibinitperiod},
+           given={Sarnath},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f9327d9c277cb2de98d7e2e26d66abf4}
+      \strng{fullhash}{f9327d9c277cb2de98d7e2e26d66abf4}
+      \strng{bibnamehash}{f9327d9c277cb2de98d7e2e26d66abf4}
+      \strng{authorbibnamehash}{f9327d9c277cb2de98d7e2e26d66abf4}
+      \strng{authornamehash}{f9327d9c277cb2de98d7e2e26d66abf4}
+      \strng{authorfullhash}{f9327d9c277cb2de98d7e2e26d66abf4}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{An Integrated Approach}
+      \field{title}{Object-Oriented Analysis, Design and Implementation}
+      \field{year}{2015}
+    \endentry
+    \entry{satzinger2012}{book}{}
+      \name{author}{3}{}{%
+        {{hash=81a85f9855f1bea3af71918369ca874e}{%
+           family={Satzinger},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=99fb475b0459f57edc542316f59bf88e}{%
+           family={Jackson},
+           familyi={J\bibinitperiod},
+           given={Robert\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d2acc798b9371077a2162c88055d993a}{%
+           family={Burd},
+           familyi={B\bibinitperiod},
+           given={Stephen\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {Course Technology, Cengage Learning}%
+      }
+      \strng{namehash}{e97ff5ab35002ba54b010c141255c6b7}
+      \strng{fullhash}{e97ff5ab35002ba54b010c141255c6b7}
+      \strng{bibnamehash}{e97ff5ab35002ba54b010c141255c6b7}
+      \strng{authorbibnamehash}{e97ff5ab35002ba54b010c141255c6b7}
+      \strng{authornamehash}{e97ff5ab35002ba54b010c141255c6b7}
+      \strng{authorfullhash}{e97ff5ab35002ba54b010c141255c6b7}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{In a Changing World}
+      \field{title}{System Analysis and Design}
+      \field{year}{2012}
+    \endentry
+    \entry{larman2003}{book}{}
+      \name{author}{1}{}{%
+        {{hash=be7db5922f05fc919bdc1c036502e5ee}{%
+           family={Larman},
+           familyi={L\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Madrid}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Educación}%
+      }
+      \strng{namehash}{be7db5922f05fc919bdc1c036502e5ee}
+      \strng{fullhash}{be7db5922f05fc919bdc1c036502e5ee}
+      \strng{bibnamehash}{be7db5922f05fc919bdc1c036502e5ee}
+      \strng{authorbibnamehash}{be7db5922f05fc919bdc1c036502e5ee}
+      \strng{authornamehash}{be7db5922f05fc919bdc1c036502e5ee}
+      \strng{authorfullhash}{be7db5922f05fc919bdc1c036502e5ee}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Una introducción al análisis y diseño orientado a objetos y al proceso unificado}
+      \field{title}{UML y Patrones}
+      \field{year}{2003}
+    \endentry
+    \entry{seidl2012}{book}{}
+      \name{author}{4}{}{%
+        {{hash=82f868a10506aa6a8af6dd6ef3f05e5b}{%
+           family={Seidl},
+           familyi={S\bibinitperiod},
+           given={Martina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3dbd2dc10f35f55afb0defd86a38457d}{%
+           family={Scholz},
+           familyi={S\bibinitperiod},
+           given={Marion},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8549635a782543a9ff310e01e1745312}{%
+           family={Huemer},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=73406f6e4265e57772c129f81597a6a1}{%
+           family={Kappel},
+           familyi={K\bibinitperiod},
+           given={Gerti},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Heidelberg, Germany}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{80dc148224a336a3138efa997643c1fb}
+      \strng{fullhash}{8cacdf8a341c338aa497fc3b00af9405}
+      \strng{bibnamehash}{8cacdf8a341c338aa497fc3b00af9405}
+      \strng{authorbibnamehash}{8cacdf8a341c338aa497fc3b00af9405}
+      \strng{authornamehash}{80dc148224a336a3138efa997643c1fb}
+      \strng{authorfullhash}{8cacdf8a341c338aa497fc3b00af9405}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{An Introduction to Object-Oriented Modeling}
+      \field{title}{UML @ Classroom}
+      \field{year}{2012}
+    \endentry
+    \entry{pooii2017}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=7910d89d780b9c7de9b647da1357847e}{%
+           family={Biale},
+           familyi={B\bibinitperiod},
+           given={Claudio\bibnamedelima O.},
+           giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \strng{namehash}{7910d89d780b9c7de9b647da1357847e}
+      \strng{fullhash}{7910d89d780b9c7de9b647da1357847e}
+      \strng{bibnamehash}{7910d89d780b9c7de9b647da1357847e}
+      \strng{authorbibnamehash}{7910d89d780b9c7de9b647da1357847e}
+      \strng{authornamehash}{7910d89d780b9c7de9b647da1357847e}
+      \strng{authorfullhash}{7910d89d780b9c7de9b647da1357847e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Clase 10 - Diseño}
+      \field{title}{Programación Orientada a Objetos II}
+      \field{year}{2017}
     \endentry
   \enddatalist
 \endrefsection

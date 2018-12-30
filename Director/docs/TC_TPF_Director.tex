@@ -1,6 +1,6 @@
 \documentclass{report}
 \renewcommand{\bibname}{Referencias}
-\renewcommand\contentsname{\'Indice de Conten\'ido}
+\renewcommand\contentsname{Índice de Contenído}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \graphicspath{{img/}}
@@ -8,15 +8,16 @@
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{booktabs}
+\usepackage{csquotes}
 \usepackage{blindtext}
 \usepackage{enumitem}
 \usepackage{listings}
 \renewcommand{\lstlistingname}{Fragmento}
 \renewcommand{\lstlistlistingname}{Índice de Fragmentos de Código}
 \lstdefinelanguage{director}{
-	morekeywords={class, relationships, void, integer, double, float, long,
-	boolean, string, char, list, set, public, private, protected, derivate,
-	package, @id, @readOnly, @sequence, @unique},
+	morekeywords={class, relationships, abstract, void, integer, double,
+	float, long, boolean, string, char, list, set, public, private, protected,
+	derivate, package, @id, @readOnly, @sequence, @unique},
 	sensitive=false,
 	morecomment=[l]{##},
 	morestring=[b]"
@@ -52,6 +53,7 @@ interesado la posibilidad de leer el material en la \'ultima versi\'on disponibl
 
 \hfill--\textsc{Equipo Director}
 \tableofcontents
+\listoffigures
 \lstlistoflistings
 \pagenumbering{gobble}
 \newpage
@@ -65,6 +67,9 @@ interesado la posibilidad de leer el material en la \'ultima versi\'on disponibl
 
 % Compilado para la sección dedicada al lenguaje
 \input{director/principal.tex}
+
+% Capitulo anexo, ejemplos de uso de director
+\input{anexo/principal.tex}
 
 % === Bilbiografia === %
 \newpage
