@@ -1,0 +1,92 @@
+\section{Metadatos}
+\label{sec:metadatos}
+
+La naturaleza que rodea a la propuesta, presenta custiones que no se pueden
+solucionar en el modelo dado a que no son inherentes al mismo, para dar una
+solución a esta situación se decidió la inclusión de otro tipo de elementos al
+lenguaje, además de los que representan a los elementos utilizados en el
+diagrama de clases de UML, estos elementos son denominados \texttt{Metadatos}.
+
+Los metadatos permiten dar directivas al lenguaje de que se debe realizar con
+el modelo, ejemplo:
+
+\begin{itemize}
+\item Lenguaje de salida, este brinda al lenguaje cual debe ser el
+\texttt{lenguaje de salida} del modelo.
+\item Estructura de salida, este brinda ordenes al lenguaje de si las clases
+resultantes deben estar separadas en diferentes archivos (obligatorio para
+lenguajes como Java) o en un solo archivo (Lenguajes como Python permiten
+esto).
+\end{itemize}
+
+El hecho de que deba existir otro tipo de cuestiones en el archivo que describe
+al modelo, que no necesariamente tiene que ver con el modelo, hace que también
+sea necesario agregar algún mecanismo que permita comunicar al lenguaje donde
+inicia y donde termina el modelo. Esto se realiza con los siguientes literales,
+y utilizando uno de los simbolos ya mencionados en el \texttt{Cuadro
+\ref{c:s_especiales}, Sección {\ref{sec:simbolosespeciales}}}.
+
+\begin{lstlisting}[caption={Director - Inicio y Fin del Modelo},
+label=lst:drtiniciofin]
+	#+BEGINDRT
+	  ... Descripcion
+    ...    del
+		...   Modelo
+	#+ENDDRT
+\end{lstlisting}
+
+Como se aprecia en el \texttt{Fragmento {\ref{lst:drtiniciofin}}}, la descripción
+del modelo con todos los elementos descritos anteriormente están envueltos
+en los literales \texttt{BEGINDRT} y \texttt{ENDDRT} antecedidos por uno de los
+símbolos especiales \texttt{\#+}, de la misma forma, los tokens para indicar
+cuestiones como el lenguaje que se debe generar o la estructura de salida,
+son precedidos por el mismo simbolo especial, y se conforman de diferentes
+secciones que permiten la configuración de diferentes aspectos de lo que se
+obtiene en la salida, se brindará un ejemplo, pero cabe destacar que la
+descripcion de todas las secciones posibles para la configuración no se detalla
+en el presente documento.
+
+\begin{lstlisting}[caption={Director - Metadatos ejemplos}, numbers=left,
+label=lst:metadatoej]
+	#+DRT.CONF.O.LANG=java
+	#+JAVA.CONF.O.AUTHOR=Ulises
+	#+JAVA.CONF.F.STRUCT=split
+\end{lstlisting}
+
+A continuación se brinda una explicación de los ejemplos expuestos en el
+\texttt{Fragmento \ref{lst:metadatoej}} primeramenta separando los diferentes
+componentes	en áreas de interes, luego comentando lo que cada área pretende
+represenar:
+
+\begin{itemize}
+	\item \texttt{Linea 1}: en primer lugar se tiene \texttt{DRT}, éste indica el
+		lenguaje para el cual se estará seteando la configuración, el ejemplo
+		concreto indicaría alguna directiva al lenguaje Director de como tratar al
+		modelo, lo siguiente \texttt{CONF} indica que se trata de una
+		configuración, luego se tiene \texttt{O} el cual se desprende de la palabra
+		\textit{Output} haciendo referencia a la salida del programa y finalmente,
+		se tiene \texttt{LANG}, lo cual pasa a ser una propiedad que tomara el
+		valor de `java' de esta forma se le esta diciendo ``\textit{Para lo que
+		tenga que ver con la manipulacióñ de modelos mediante el lenguaje Director,
+		establecer la configuracón de lenguaje para la salida del mismo como
+		java}''.
+	\item \texttt{Linea 2}: aquí se tiene \texttt{JAVA} al principio, por lo
+		tanto lo que sigue será para darle directivas a las salidas que estén en
+		lenguaje Java, luego se tiene \texttt{CONF} lo cual indica que se estará
+		tratando de una sección de configuración, despues se tiene \texttt{O}
+		nuevamente, este viene de output, y finalmente se tiene un atributo para la
+		sección que se denomina \texttt{AUTHOR}, éste permitirá a la herramiena
+		establecer el autor que estará trabajando en el código generados.
+	\item \texttt{Línea 3}: éste nuevamente inicia con \texttt{JAVA} lo que
+		indica que se darán indicaciones que tienen que ver con el lenguaje Java,
+		dentro de este, es de interés la categoría configuración (\texttt{CONF}) y
+		aquí, en la configuración interesa la parte ya ``física'' (por la
+		\texttt{F}, derivado de ``\textit{File}''), del archivo, ya
+		se trata de un archivo con codigo generado en su interior, aqui el atributo
+		que se esta estableciendo se denomina \texttt{STRUCT} haciendo referencia a
+		la estructura con la que se generará el proyecto, en este caso ``split''
+		significaría que las clases estarán en archivos separados, una clase por
+		cada archivo.
+\end{itemize}
+
+

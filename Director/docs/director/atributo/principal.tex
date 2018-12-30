@@ -2,19 +2,32 @@
 \label{sec:atributo}
 
 Los atributos son los elementos utilizados en el standard UML para designar
-propiedades que son inherentes de clases, una vez instanciados estos toman
-valor y ayudan al manejo de datos del objeto, el lenguaje propuesto permite el
-manejo de los atributos y algunas otras cuestiones que están relacionadas con
-estos.
+propiedades que son inherentes a las clases, una vez instanciadas (las clases)
+estos (los atributos) toman valor y ayudan al manejo de datos del objeto; El
+lenguaje propuesto, permite el manejo de los atributos y algunas otras
+cuestiones que están relacionadas con estos.
 
 La definición de un atributo según notacion BNF es la siguiente:
 
-\begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
-  <atributo> ::= <visibilidad> <espacio-blanco> <nombre> ":" <tipo>
+\begin{lstlisting}[caption={BNF - Atributo}, basicstyle=\footnotesize\ttfamily]
+  <atributo> ::= <visibilidad> <nombre> ":" <tipo>
 \end{lstlisting}
 
-Teniendo en cuenta que se tiene que estar en el contexto de una clase para que
-el mismo tenga sentido, a continuación un ejemplo:\\
+Este elemento dentro del lenguaje se puede ver en un gráficamente en
+un autómata finito de la siguiente manera:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.4\linewidth]{automatas_finitos/atributoDrt.png}
+	\caption{Autómata finito - Atributo con restricciones de objeto}
+	\label{fig:af_atr_modif}
+\end{figure}
+
+Teniendo en cuenta que el atributo tiene que estar definido dentro de otra
+estructura del estándar UML, una clase.
+
+A continuación un ejemplo, para expresar medianamente el funcionamiento del
+lenguaje:\\
 
 \begin{displayquote}
 	\texttt{Consigna}: \textit{se desea tener una clase que permita el manejo de
@@ -28,16 +41,18 @@ de la siguiente manera:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.2\linewidth]{diagramas_clases/ej_diag_clase.png}
-	\caption{Representación gráfica de la consigna mediante UML}
+	\caption{Diagrama de Clase - representación de la consigna}
 	\label{fig:ej_diag_clase.png}
 \end{figure}
 
-Teniendo esta información se puede armar un modelo en el lenguaje director que
-concuerde con estos requerimientos. Dado a que por el momento unicamente se
-está tratando con los atributos no se tendrá en cuenta la declaración de la
-clase \texttt{Persona} mencionada en la consigna propuesta.
+Teniendo esta información se puede armar un modelo en el lenguaje Director que
+concuerde con estos requerimientos.
 
-\begin{lstlisting}[label=frag:atributo]
+\textit{Dado a que por el momento unicamente se está tratando con los atributos
+no se tendrá en cuenta la declaración de la clase \texttt{Persona} mencionada
+en la consigna propuesta}.
+
+\begin{lstlisting}[caption={Director - Modelado de atributos}, label=lst:atributo]
   ...
 		private nombre:string
 		private apellido:string
@@ -45,23 +60,24 @@ clase \texttt{Persona} mencionada en la consigna propuesta.
 	...
 \end{lstlisting}
 
-Lo expuesto en el \texttt{Fragmento \ref{frag:atributo}}, si bien, demuestra
+Lo expuesto en el \texttt{Fragmento \ref{lst:atributo}}, demuestra
 la capacidad del lenguaje de describir una serie de atributos con sus
-respectivos metadatos (visibilidad y tipo), también se pretende dar los
-primeros pasos para la futura implementación de la compatibilización con los
-futuras funcionalidades extraídas de un acercamiento al Lenguaje de
-Restricción de Objetos, puesto a que la adición de funcionalidades de éstas
-características automatizaria aún mas el proceso de
+respectivos metadatos (visibilidad y tipo), sin embargo, cabe destacar que
+también se deja abierta la posibilidad de la futura implementación y
+la compatibilización con funcionalidades relacionadas al Lenguaje de
+Restricción de Objetos, puesto a que la adición de éstas
+características automatizaria aún más el proceso de
 desarrollo y permitiría el pase de modelo-a-código de manera mas sencilla.
+
 Las características que se implementan compatibles funcionalidades brindadas
-por OCL son las de modificadores para los atributos, ademas de los mencionados
-anteriormente, estos modificadores ya se mencionaron en la \texttt{Sección
-\ref{sec:palabrasreservadas}}.
+por OCL son las de modificadores para los atributos, estos modificadores ya
+se mencionaron en la \texttt{Sección \ref{sec:palabrasreservadas}}.
 
 Como ejemplo, se podrían aplicar algunas de estas cuestiones a lo implementado
-al \texttt{Fragmento \ref{frag:atributo}}.
+en \texttt{Fragmento \ref{lst:atributo}} resultando lo siguiente:
 
-\begin{lstlisting}[label=frag:atributo_restr]
+\begin{lstlisting}[caption={Director - Modelao de atributos (con OCL)},
+label=lst:atributo_restr]
   ...
 		private nombre:string
 		private apellido:string
@@ -70,7 +86,7 @@ al \texttt{Fragmento \ref{frag:atributo}}.
 \end{lstlisting}
 
 De esta forma, lo implementado en el \texttt{Fragmento
-\ref{frag:atributo_restr}} brinda información como para que se pueda determinar
+\ref{lst:atributo_restr}} brinda información como para que se pueda determinar
 que el atributo DNI:
 \begin{itemize}
 	\item debe ser tratado como un identificador de la clase.
@@ -80,25 +96,36 @@ que el atributo DNI:
 		repetir.
 \end{itemize}
 
-Lo cual da información relevante para que la herramienta pueda brindar
-resultados mas cercanos al dominio en el que se esté trabajando.
+Con esto, los resultados de la herramienta hacen que lo generado esté aun
+más cerca al dominio en el que se esté trabajando.
 
 Se puede dejar expresado que el BNF, teniendo en cuenta la incorporación de lo
-demostrado quedaría de la siguiente manera:
+demostrado, quedaría de la siguiente manera:
 
-\begin{lstlisting}[basicstyle=\ttfamily\footnotesize, label=frag:bnf_atributo_restr]
+\begin{lstlisting}[caption={BNF - Atributo}, basicstyle=\ttfamily\footnotesize,
+label=lst:bnf_atributo_restr]
 		<atributo> ::= <visibilidad> <nombre> ":" <tipo>
-		"{" <modificador> "}"
+		               "{" <modificadores> "}"
 \end{lstlisting}
 
-\begin{lstlisting}[language=Java, basicstyle=\tiny\ttfamily, label=frag:bnf_atributo_modif]
-		<modificador> ::= @id | @readOnly | @unique | @sequence | <modificador>
+En donde \texttt{modificadores} es la pluralización de un \texttt{modificador}:
+
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+	<modificadores> ::= <modificador> | <modificadores>
 \end{lstlisting}
 
-\subsection{Autómata Finito}
+y \texttt{modificador} se define de la siguiente manera:
+
+\begin{lstlisting}[language=Java, basicstyle=\footnotesize\ttfamily, label=lst:bnf_atributo_modif]
+	<modificador> ::= @id | @readOnly | @unique | @sequence
+\end{lstlisting}
+
+En donde, además, se puede definir un autómata para los modificadores que
+brindan las restricciones para el objeto, de la siguiente manera:
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.4\linewidth]{automatas_finitos/atributoDrt.png}
-	\caption{Autómata finito para un atributo con restricciones de objeto}
-	\label{fig:af_atr_modif}
+	\includegraphics[width=.4\linewidth]{automatas_finitos/modificadores-drt.png}
+	\caption{Autómata finito - Modificador para los atributos}
+	\label{fig:af_atr_modif_OCL}
 \end{figure}

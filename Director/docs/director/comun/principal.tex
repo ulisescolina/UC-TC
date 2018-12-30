@@ -11,15 +11,17 @@ componentes mas complejos.
 Segun la notación BNF se tiene lo siguiente:
 
 \begin{lstlisting} [basicstyle=\footnotesize\ttfamily]
-	<letra> ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n |
-	o | p | q | r | s | t | u | v | w | x | y | z | A | B | C | D |
-	E | F | G | H	| I | J | K | L | M | N | O | P | Q | R | S | T |
-	U | V | W | X | Y | Z
+	<letra> ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" |
+	            "j" | "k" |	"l" | "m" | "n" | "o" | "p" | "q" | "r" |
+							"s" | "t" | "u" | "v" | "w" | "x" | "y" |	"z" | "A" |
+							"B" |	"C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" |
+							"K" | "L" | "M" |	"N" | "O" | "P" |	"Q" | "R" | "S" |
+							"T" |	"U" | "V" | "W" | "X" | "Y" | "Z"
 \end{lstlisting}
 
 
-y para un patrón para el motor de expresiones regulares se tiene lo
-siguiente para las letras:
+y para un patrón de expresiones regulares se tiene lo
+siguiente con respecto a las letras:
 
 \begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
 Regex: /[a-zA-Z]/
@@ -31,7 +33,7 @@ La notación para la gramática libre de contexto en formato BNF para los
 \texttt{dígitos} es la siguiente:
 
 \begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
-  <digito> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+  <digito> ::= "0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"
 \end{lstlisting}
 
 En cuanto a la expresión regular para los mismos se define de la siguiente
@@ -47,10 +49,10 @@ BNF para describir un simbolo dentro del lenguaje se expone a continuación:
 
 \begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
 	<simbolo> ::= "|" | " " | "!" | "#" | "$" | "%" | "&" | "(" | ")"
-	| "*" | "+"	| "," | "-" | "." | "/" | ":" | ";" | ">" | "=" | "<"
-	| "?" | "@" | "[" | "\"	| "]" | "^" | "_" | "`" | "{" | "}" | "~"
+	              | "*" | "+"	| "," | "-" | "." | "/" | ":" | ";"
+								| ">" | "=" | "<"	| "?" | "@" | "[" | "\"	| "]"
+								| "^" | "_" | "`" | "{" | "}" | "~"
 \end{lstlisting}
-
 
 \subsection{texto}
 \label{sub:texto}
@@ -70,7 +72,7 @@ mencionados:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.4\linewidth]{automatas_finitos/textoDrt.png}
-	\caption{Automata finito para texto}
+	\caption{Autómata finito - Texto}
 	\label{fig:texto}
 \end{figure}
 
@@ -79,33 +81,37 @@ mencionados:
 Esta expresión se utiliza a lo largo del documento para hacer referencia a
 cadenas de texto que identifiquen un elemento del lenguaje, como por ejemplo,
 utilizando con la palabra \texttt{class} este pasaría a definir el nombre de la
-clase, si se utiliza con en un contexto de atributo, este pasaría a formar
-parte del nombre que identifica a ese atributo, a continuación se presenta la
+clase, si se utiliza con en un contexto de atributo, este sería
+el nombre que identifica a ese atributo. A continuación, se presenta la
 gramática libre de contexto y la expresión regular para un elemento
-\texttt{nombre} dentro del lenguaje:
+\texttt{nombre} dentro del lenguaje, antes, se crea una herramienta que permita el uso
+recursivo de \texttt{letra}, \texttt{simbolo} y \texttt{digito}.
+Si bien esto se parece bastante a lo que se expone en la \texttt{Subsección
+\ref{sub:texto}} per se tiene la necesidad de restringir el uso de símbolos
+a unicamente el uso del guión bajo ``\_''.
 
-Primero se realiza la definicion de una herrameinta que nos permita el uso
-recursivo de \texttt{letra}, \texttt{simbolo} y \texttt{digito}. Si bien esto
-se parece bastante a lo que se expone en la \texttt{Subsección \ref{sub:texto}}
-per se tiene la necesidad de restringir el uso de símbolos a unicamente el uso
-del guión bajo ``\_''.
-
-\begin{lstlisting}[basicstyle=\footnotesize\ttfamily, caption={BNF intermedio
-definición nombre}]
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
   <nombre-texto> ::= <letra|digito|"_"> <nombre-texto>
 \end{lstlisting}
 
-\begin{lstlisting}[basicstyle=\footnotesize\ttfamily, caption={BNF para un
-nombre}]
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
   <nombre> ::= <letra> <nombre-texto>
 \end{lstlisting}
 
 En cuanto la expresión regular para la expresión anterior:
 
-\begin{lstlisting}[basicstyle=\footnotesize\ttfamily, caption={regex para un
-nombre}]
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
 	Regex: /[a-zA-Z][a-zA-Z0-9]*/
 \end{lstlisting}
+
+El autómata finito para este elemento es el siguiente:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.4\linewidth]{automatas_finitos/nombreDrt.png}
+	\caption{Autómata finito - Nombre}
+	\label{fig:nombre}
+\end{figure}
 
 \subsection{visibilidad}
 \label{sub:visibilidad}
