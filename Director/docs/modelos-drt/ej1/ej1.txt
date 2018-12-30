@@ -1,0 +1,16 @@
+#+DRT.CONF.O.LANG=python #se define el lenguaje de salida
+#+DRT.CONF.O.PROJ=Ejemplo #se designa un nombre para el proyecto
+#+PYTHON.CONF.O.STRUCT=join
+#+BEGINDRT
+	class A {
+		- atr:integer
+		+ met():string
+	}
+	class B {
+		- atr:string
+		+ met():integer
+	}
+	relationships {
+		A "1" --- "0..*" B
+	}
+#+ENDDRT

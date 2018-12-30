@@ -1,0 +1,38 @@
+#+DRT.CONF.O.LANG=java #se define el lenguaje de salida
+#+DRT.CONF.O.PROJ=Facturacion #se designa un nombre para el proyecto
+#+JAVA.CONF.F.STRUCT=split #se define la estructura de salida
+
+#+BEGINDRT # token inicio de modelo
+	class Factura {
+		- id:integer{@id, @sequence}
+		- numero:integer
+	}
+
+	class TipoFactura {
+		- id:integer
+		- descripcion:string
+		/**
+		* Se utiliza para establecer cual sera el porcentaje
+		* del impuesto que se cobrara en la factura.
+		*/
+		- pImpuesto:double
+	}
+
+	class Producto {
+		- id:integer{@id, @sequence}
+		- cantidad:integer
+	}
+
+	class DescripcionProducto {
+		- id:integer{@id, @sequence}
+		- descripcion:string
+		- codigo:string
+		- precio:double
+	}
+
+	relationships {
+		Factura "*" <-- "*" Producto:productos
+		Factura "*" <-- "1" TipoFactura:tipoFactura
+		Producto:productos "0..*"---"1" DescripcionProducto:descripcion
+	}
+#+ENDDRT #token fin modelo

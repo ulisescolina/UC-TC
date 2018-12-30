@@ -1,0 +1,70 @@
+#+DRT.CONFIG.O.LANG=java
+#+DRT.CONFIG.O.PROJ=Reparaciones
+#+JAVA.CONFIG.O.STRUCT=split
+
+#+BEGINDRT
+	#{Clase abstracta que permite que los diferentes tipos
+	de tecnicos compartan los atributos que tienen en comun}#
+	abstract class Tecnico {
+	  - nombres:string
+	  - apellidos:string
+	  - documentoUnico:string
+	}
+
+	class EmpleadoJornalero {
+	  - tarifaPorHora:double
+	}
+
+	class EmpleadoMensual {
+	  - sueldoMensual:double
+	}
+
+	class TipoDeArticulo {
+	  - id_tipoarticulo:integer
+	  - codigo:string
+	  - nombre:string
+	}
+
+	class Articulo {
+	  - id_articulo:integer
+	  - nombre:string
+	}
+
+	class TareaARealizar {
+	  - id_tarearealizar:integer
+	  - b_finalizado:boolean
+	}
+
+	class TareaDefinida {
+	  - id_tareadefinida
+	  - codigoUnico:string
+	  - nombre:string
+	  - descripcion:string
+	}
+
+	class Reclamo {
+	  - numero:integer
+	  - descProblema:string
+	  - fechaEntrada:date
+	  - FechaEstimEntrega:date
+	}
+
+	class TiempoInvertido {
+	  - fecha:date
+	  - horasInvertidas:Time
+	}
+
+	relationships {
+		Tecnico:tecnicos "1..*" --- "*" TipoDeArticulo:artEsp
+		Tecnico:tecnico "1" --- "*" TareaARealizar:tareas
+		Tecnico <|- EmpleadoJornalero
+		Tecnico <|- EmpleadoMensual
+		Reclamo:reclamos "*" --- "1" Articulo:articulo
+		TareaARealizar:tareas "*" --- "1" TareaDefinida:tarea
+		TareaDefinida:tDA "*" --- "1" TipoDeArticulo:tAA
+		Reclamo:reclamo "1" --- "*" TareaARealizar:tareas
+		TipoDeArticulo:tipo "1" --- "*" Articulo:articulos
+		TareaARealizar:tarea "1" --- "*" TiempoInvertido:tiempos
+	}
+
+#+ENDDRT
