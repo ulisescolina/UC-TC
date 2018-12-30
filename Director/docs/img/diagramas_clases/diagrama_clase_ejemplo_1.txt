@@ -1,0 +1,14 @@
+@startuml diagrama_clase_ejemplo_1.png
+left to right direction
+class A {
+	- atr:integer
+	+ met():string
+}
+
+class B {
+	- atr:string
+	+ met():integer
+}
+
+A "1" --- "0..*" B
+@enduml

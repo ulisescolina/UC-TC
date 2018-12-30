@@ -1,0 +1,29 @@
+@startuml diagrama_clase_ejemplo_2.png
+class Factura {
+	- id:integer{@id, @sequence}
+	- numero:integer
+}
+
+class TipoFactura {
+	- id:integer
+	- descripcion:string
+	- v_impuesto:double
+}
+
+class Producto {
+	- id:integer{@id, @sequence}
+	- cantidad:integer
+}
+
+class DescripcionProducto {
+	- id:integer{@id, @sequence}
+	- descripcion:string
+	- codigo:string
+	- precio:double
+}
+
+Factura "*" <-- "*" Producto
+Factura "*" <-- "1" TipoFactura
+Producto "*" -- "1" DescripcionProducto
+
+@enduml

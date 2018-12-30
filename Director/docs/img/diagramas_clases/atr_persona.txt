@@ -1,0 +1,9 @@
+@startuml ej_diag_clase.png
+
+class Persona {
+	- nombre:string
+	- apellido:string
+	- DNI:string
+}
+
+@enduml
