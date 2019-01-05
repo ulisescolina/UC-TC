@@ -212,8 +212,21 @@ numbers=left]{modelos-drt/ej3/Reparaciones/Articulo.java}
 numbers=left]{modelos-drt/ej3/Reparaciones/TareaDefinida.java}
 
 \lstinputlisting[language=Java, caption={Java - Ejemplo 3, Clase generada
-\texttt{TipoDeArticulo.java}}, label=ej2descripcionproducto,
+\texttt{TipoDeArticulo.java}}, label=ej3tipodearticulo,
 numbers=left]{modelos-drt/ej3/Reparaciones/TipoDeArticulo.java}
+
+En el código anterior se ve que una de las relaciones que se tienen plasmadas
+en el \texttt{Fragmento \ref{lstdrt3}} específicamente en la \texttt{línea 58}
+la cual representa la primer relación en el conjunto de relaciones que hacen al
+modelo, ésta, asocia a una \texttt{clase} con una \texttt{clase abstracta}, la
+cual, como se puede ver en las subsiguientes líneas \texttt{60} y \texttt{61}
+tiene subclases, lo cual genera mas complejidad a la hora de tratar la lista de
+tecnicos que se debe manejar en la clase descrita en el \texttt{Fragmento
+\ref{ej3tipodearticulo}}, además, éste comportamiento no se describe a lo
+largo del documento, por lo que se opta, en la presente iteración del lenguaje
+hacer que se emita una notificación en el codigo generado, a modo de comentario, para
+que el usuario implemente lo necesario para tratar las instancias de las
+subclases de la clase abstracta.
 
 \lstinputlisting[language=Java, caption={Java - Ejemplo 3, Clase generada
 \texttt{TareaARealizar.java}}, label=ej2factura,

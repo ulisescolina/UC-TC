@@ -56,4 +56,11 @@ public class TipoDeArticulo{
 	public void quitarTDA(TareaDefinida TDA){
 		this.tDA.remove(TDA);
 	}
+
+	/*
+	 Aun no es posible manejar instancias de subclases que
+	 heredan de una clase abstracta, por lo tanto, es necesario
+	 que implemente de forma manual como tratar a la lista:
+	 List<Tecnico> tecnicos.
+	*/
 }

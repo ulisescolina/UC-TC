@@ -21,16 +21,13 @@ notaciones gráficas comparadas con las formas textuales de expresión
 
 % Cuestiones por las cuales el uso de UML no siempre sucede
 % dentro del desarrollo de Software
-A pesar de lo mencionado, encuestas realizadas en uno de los estudios que trata
-a UML como una notación dominante dentro del desarrollo de software realizada años
-atras, muestran que desarrolladores prefieren centrar el trabajo en vastas
+A pesar del resultado de los estudios mencionados, algunas encuestas realizadas
+en los mismos muestran que los desarrolladores prefieren centrar el trabajo en vastas
 cantidad de líneas de código, raramente mirando diagramas, y mucho menos
 confeccionándolos o editándolos, posibles razones para este
-comportamiento se descubre en \cite{bente2006} en donde se identifican cuatro
-razones por las cuales los efectos positivos de UML pueden verse reducidos,
-aunque para el presente trabajo se puede hacer hincapié en algunos de ellos
-nada más:
-\textit{la no-factibilidad de realizar ingenieria inversa en codigo heredado},
+comportamiento, en principio antagónico, en donde los efectos positivos de UML pueden
+verse reducidos \cite{bente2006} se describen a continuación:
+\textit{la no-factibilidad de realizar ingeniería inversa en código heredado},
 \textit{costo de entrenamiento del equipo} y \textit{los requerimientos no
 estaban distribuidos en unidades funcionales del sistema}.
 
@@ -49,7 +46,8 @@ por la cual no se modele mucho. Las razones principales fueron:
 	\item \textit{Las herramientas para modelado son pesadas}, haciendo alusión a los
 		recursos computacionales en los cuales se debe incurrir para utilizar dichas
 		herramientas.
-		\item \textit{El código generado desde una herramienta no es de mi agrado}.
+		\item \textit{El código generado desde una herramienta no es del agrado del
+			desarrollador}.
 		\item \textit{Crear y modificar un modelo es lento}.
 	\end{enumerate}
 
@@ -63,8 +61,8 @@ siguientes fueron los mayores inconvenientes identificados por los desarrollador
 		del proyecto, lo cual lleva al tercer punto de la lista.
 	\item Comportamiento del sistema difícil de entender.
 	\item La calidad del código se degrada con el tiempo.
-	\item Muy dificil reestructurar el proyecto.
-	\item Cabios de codigo pueden implementar bugs.
+	\item La reestructuración del proyecto es muy compleja.
+	\item Los cambios de código pueden producir bugs.
 \end{enumerate}
 
 % Luego describir sus bases teóricas
@@ -72,16 +70,17 @@ siguientes fueron los mayores inconvenientes identificados por los desarrollador
 \section{Desarrollo de Software Dirigido por Modelos}
 \label{sec:mdsd}
 El desarrollo de software dirigido por modelos (MDSD, de ahora en más, por sus
-siglas en inglés) como se menciona en \cite{mdsd} , surge a partir de la popularización de UML,
+siglas en inglés) como se menciona en \cite{mdsd} , surge a partir de la
+popularización de UML;
 el uso del mismo, sin embargo, solamente se restringía a la confección de
-documentación, debido a motivos ya mencionados, el acercamiento de que ofrece
+documentación, debido a motivos ya mencionados. El acercamiento de que ofrece
 MSDS es enteramente diferente, la parte ``dirigido'' (Driven, en MDSD),
 enfatiza la importancia y el rol central que le da este paradigma al modelo
 éste ya no solamente constituye
-la documentación del software, sino que es considerado igual a código, este es
-comparable a campos de alta especialidad, dada una de las características del
-acercamiento, esta es que apunta a la realización de abstracciones específicas de
-dominio y a hacer estas abstracciones accesibles a través del modelado, ésta
+la documentación del software, sino que tambien es considerado igual a código;
+incluso es aplicable en campos de alta especialidad debido a una de las
+características del acercamiento: realización de abstracciones específicas de
+dominio y hacer estas abstracciones accesibles a través del modelado. Ésta
 característica permite la automatización de la implementación de código,
 haciendo posible a la vez el incremento en la productividad y la mantenibilidad
 de los sistemas.
@@ -98,17 +97,18 @@ deben tener en cuenta tres requerimientos:
 \section{Arquitectura Dirigida por Modelos}
 \label{sec:arquitectura_dirigida_por_modelos}
 La arquitectura dirigida por modelos (MDA, por sus siglas en ingles) es una
-iniciativa introducida por el Object Management Group, con el proposito de
+iniciativa introducida por el \textit{Object Management Group}, con el propósito de
 brindar una forma estandarizada para la especificación e interoperabilidad de
 sistemas basado en el uso formal de modelos \cite{poole2001}, en el núcleo de
-MDA se encuentran otros estándares implementados por el OMG: the Unified
-Modeling Language (UML), Meta Object Facility (MOF), XML Metadata Interchange
-(XMI) y el Common Warehouse Metamodel (CWM). Al igual que el MDSD, MDA, ubica
-los modelos de sistemas en el nucleo del problema de interoperabilidad lo cual
-hace que la implementación del sistema sea independiente de la técnología.
+MDA se encuentran otros estándares implementados por el OMG: \textit{the Unified
+Modeling Language} (UML), \textit{Meta Object Facility} (MOF), \textit{XML
+Metadata Interchange}
+(XMI) y el \textit{Common Warehouse Metamodel} (CWM). Al igual que el MDSD, MDA, ubica
+los modelos de sistemas en el núcleo del problema de interoperabilidad lo cual
+hace que la implementación del sistema sea independiente de la tecnología.
 
 La OMG, promueve MDA como un \textit{marco de trabajo arquitectónico para el
-desarrollo de software}, el cual esta construido alrededor de un numero de
+desarrollo de software}, el cual está construido alrededor de un número de
 especificaciones detalladas de la misma organización que son usadas ampliamente
 en la comunidad de desarrolladores.
 
@@ -120,10 +120,10 @@ primariamente en lenguajes de modelado basados en UML \cite{mdsd}.
 
 \section{Lenguaje Específico de Dominio}
 \label{sec:dsl}
-Un lenguaje especifico de dominio (DSL) es un lenguaje de software el cual se
+Un Lenguaje Específico de Dominio (DSL) es un lenguaje de software el cual se
 especializa en abarcar un problema dentro de la ingeniería en particular, las
 cuales son características para un dominio de aplicación, éste, se basa en
-abstracciones alineadas a este dominio y provee una sintaxis propicia para
+abstracciones alineadas a este dominio y provee una sintáxis propicia para
 aplicar estas abstracciones de forma efectiva \cite{sobernig2015}.
 
 La implementación de un DSL permite mitigar ciertos aspectos que se vieron como
@@ -132,9 +132,9 @@ reutilización de código, promueve la legibilidad y el entendimiento debido al 
 nivel de abstracción del mismo, permite a que usuarios con nivel bajo en
 programación la creación de modelos para programas siempre y cuando estos
 posean el conocimiento del dominio, más verificaciones en la sintáxis y
-semantica que un lenguaje de modelado general; aunque también se enfatizan
+semántica que un lenguaje de modelado general; aunque también se enfatizan
 desventajas que estos insertan en el desarrollo, curva de aprendizaje
-necesaria y la falta de personas letradas en el DSL, ya que es mas probable que
+necesaria y la falta de personas letradas en el DSL, ya que es más probable que
 las personas sepan como resolver los problemas adoptando un lenguaje de
 propósito general el cual ya conocen.
 
