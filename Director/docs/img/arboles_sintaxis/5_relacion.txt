@@ -1,0 +1,27 @@
+[comp-drt
+  [relacion
+    [rol-asoc
+      [clasenombreClase]
+      [sim-esp:]
+      [rolnombreRol]
+    ]
+    [cardinalidad
+      [delim"]
+      [valor1]
+      [delim"]
+    ]
+    [tipo-relacion
+      ---
+    ]
+    [cardinalidad
+      [delim"]
+      [valor*]
+      [delim"]
+    ]
+    [rol-asoc
+      [clasenombreClase]
+      [sim-esp:]
+      [rolnombreRol]
+    ]
+  ]
+]
