@@ -1,0 +1,8 @@
+  Regex:
+  (<--|<\|-|---|-\|>|-->)\s*
+
+  Match: <--  |  No Match: <-
+  Match: <|-  |  No Match: <=
+  Match: ---  |  No Match: <--
+  Match: -|>  |  No Match: <==
+  Match: -->  |  No Match: <|--

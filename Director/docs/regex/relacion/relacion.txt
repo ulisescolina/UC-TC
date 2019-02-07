@@ -1,0 +1,15 @@
+  Regex:
+
+  ^[a-zA-Z_]{1}[a-zA-Z0-9_]+\s*(\:\s*[a-zA-Z_]{1}[a-zA-Z0-9_]+\s*)?
+  \"([0-9]+(\.\.([0-9+|\*]))*|\*)\"\s*
+  (<--|<\|-|---|-\|>|-->)\s*
+  \"([0-9]+(\.\.([0-9+|\*]))*|\*)\"\s*
+  [a-zA-Z_]{1}[a-zA-Z0-9_]+\s*(\:\s*[a-zA-Z_]{1}[a-zA-Z0-9_]+\s*)?$
+
+  Match: nombre_clase: rol "*" --- "*" nombre_clase_2:otroRol
+  Match: nombre_clase_1: rol "1" --- "*" nombre_clase_2:otroRol
+  Match: nombre_clase_1: rol "1..*" --- "1" nombre_clase_2:otro_Rol_2
+  Match: nombre_clase_1: rol "1..5" --- "1" nombre_clase_2:otro_Rol
+  No Match: 1_nombre_clase:rol "*" --- "*" nombre_clase_2:otroRol
+  No Match: 1_nombre_clase:1rol "*" --- "*" nombre_clase_2:otroRol
+  No Match: 1_nombre_clase:1rol '*' --- '*' nombre_clase_2:otroRol

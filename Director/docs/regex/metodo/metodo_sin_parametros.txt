@@ -1,0 +1,4 @@
+  Regex:
+  /^(public|\+|private|\-|protected|\#|derivate|\/|package|~)\s
+  \b[a-zA-Z]{1}[a-zA-Z0-9_]*\b\:(integer|double|float|long|boolean|
+  string|char)/

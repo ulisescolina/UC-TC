@@ -1,0 +1,1 @@
+  Regex: /{(@id|@seq|@unique|@readOnly)(,\s*(@id|@seq|@unique|@readOnly))*}\s/

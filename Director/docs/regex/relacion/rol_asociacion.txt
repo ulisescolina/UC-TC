@@ -1,0 +1,8 @@
+  Regex:
+  ^[a-zA-Z_]{1}[a-zA-Z0-9_]+\s*(\:\s*[a-zA-Z_]{1}[a-zA-Z0-9_]+\s*)?
+
+  Match: nombreClase1:algunrol
+  Match: _nombreClase_2:otroRol
+  Match: nombreClase : otroRol0
+  Sin Match: 1_nombreClase : otroRol
+  Sin Match: _nombreClase : 1otroRol

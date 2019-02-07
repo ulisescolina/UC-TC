@@ -1,0 +1,7 @@
+  Regex:
+  /^(public|\+|private|\-|protected|\#|derivate|\/|package|~)\s
+  +\b[a-zA-Z_]{1}[a-zA-Z0-9_]*\b\s*\((\s*[a-zA-Z0-9_]+\s*\:\s*
+  (integer|double|float|long|boolean|string|char))?(\s*,\s*
+  [a-zA-Z0-9_]+\s*\:\s*(integer|double|float|long|boolean|string
+  |char))*\s*\)\s*\:\s*(integer|double|float|long|boolean|string
+  |char)/
