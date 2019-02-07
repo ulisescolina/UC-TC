@@ -1,7 +1,7 @@
 \section{Metadatos}
 \label{sec:metadatos}
 
-La naturaleza que rodea a la propuesta, presenta custiones que no se pueden
+La naturaleza que rodea a la propuesta, presenta cuestiones que no se pueden
 solucionar en el modelo dado a que no son inherentes al mismo, para dar una
 solución a esta situación se decidió la inclusión de otro tipo de elementos al
 lenguaje, además de los que representan a los elementos utilizados en el
@@ -11,9 +11,9 @@ Los metadatos permiten dar directivas al lenguaje de que se debe realizar con
 el modelo, ejemplo:
 
 \begin{itemize}
-\item Lenguaje de salida, este brinda al lenguaje cual debe ser el
+\item Lenguaje de salida, este brinda al lenguaje cuál debe ser el
 \texttt{lenguaje de salida} del modelo.
-\item Estructura de salida, este brinda ordenes al lenguaje de si las clases
+\item Estructura de salida, este brinda órdenes al lenguaje de si las clases
 resultantes deben estar separadas en diferentes archivos (obligatorio para
 lenguajes como Java) o en un solo archivo (Lenguajes como Python permiten
 esto).
@@ -39,11 +39,11 @@ Como se aprecia en el \texttt{Fragmento {\ref{lst:drtiniciofin}}}, la descripci�
 del modelo con todos los elementos descritos anteriormente están envueltos
 en los literales \texttt{BEGINDRT} y \texttt{ENDDRT} antecedidos por uno de los
 símbolos especiales \texttt{\#+}, de la misma forma, los tokens para indicar
-cuestiones como el lenguaje que se debe generar o la estructura de salida,
+cuestiones, como el lenguaje que se debe generar o la estructura de salida,
 son precedidos por el mismo simbolo especial, y se conforman de diferentes
 secciones que permiten la configuración de diferentes aspectos de lo que se
 obtiene en la salida, se brindará un ejemplo, pero cabe destacar que la
-descripcion de todas las secciones posibles para la configuración no se detalla
+descripción de todas las secciones posibles para la configuración no se detalla
 en el presente documento.
 
 \begin{lstlisting}[caption={Director - Metadatos ejemplos}, numbers=left,
@@ -54,12 +54,12 @@ label=lst:metadatoej]
 \end{lstlisting}
 
 A continuación se brinda una explicación de los ejemplos expuestos en el
-\texttt{Fragmento \ref{lst:metadatoej}} primeramenta separando los diferentes
-componentes	en áreas de interes, luego comentando lo que cada área pretende
+\texttt{Fragmento \ref{lst:metadatoej}} primeramente separando los diferentes
+componentes	en áreas de interés, luego comentando lo que cada área pretende
 represenar:
 
 \begin{itemize}
-	\item \texttt{Linea 1}: en primer lugar se tiene \texttt{DRT}, éste indica el
+	\item \texttt{Linea 1}: en primer lugar se tiene \texttt{DRT}, este indica el
 		lenguaje para el cual se estará seteando la configuración, el ejemplo
 		concreto indicaría alguna directiva al lenguaje Director de como tratar al
 		modelo, lo siguiente \texttt{CONF} indica que se trata de una
@@ -68,7 +68,7 @@ represenar:
 		se tiene \texttt{LANG}, lo cual pasa a ser una propiedad que tomara el
 		valor de `java' de esta forma se le esta diciendo ``\textit{Para lo que
 		tenga que ver con la manipulacióñ de modelos mediante el lenguaje Director,
-		establecer la configuracón de lenguaje para la salida del mismo como
+		establecer la configuración de lenguaje para la salida del mismo como
 		java}''.
 	\item \texttt{Linea 2}: aquí se tiene \texttt{JAVA} al principio, por lo
 		tanto lo que sigue será para darle directivas a las salidas que estén en
@@ -82,8 +82,8 @@ represenar:
 		dentro de este, es de interés la categoría configuración (\texttt{CONF}) y
 		aquí, en la configuración interesa la parte ya ``física'' (por la
 		\texttt{F}, derivado de ``\textit{File}''), del archivo, ya
-		se trata de un archivo con codigo generado en su interior, aqui el atributo
-		que se esta estableciendo se denomina \texttt{STRUCT} haciendo referencia a
+		se trata de un archivo con codigo generado en su interior, aquí el atributo
+		que se está estableciendo se denomina \texttt{STRUCT} haciendo referencia a
 		la estructura con la que se generará el proyecto, en este caso ``split''
 		significaría que las clases estarán en archivos separados, una clase por
 		cada archivo.

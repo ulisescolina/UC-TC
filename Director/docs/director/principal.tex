@@ -2,34 +2,72 @@
 \chapter{Director}
 \label{sec:director}
 
-\section{Problematica}
-\label{sec:problema}
-Descripcion del problema que se pretende mitigar con el lenguaje
+\section*{Acerca de la Descripción Técnica}
+\label{sec:acerca_del_documento}
+Antes de dar inicio a la parte técnica del documento se deben aclarar unas
+cuestiones con respecto al mismo, estas cuestiones son, más que nada,
+referentes al formato.
 
-El presente trabajo pretende presentar una herramienta que aplique los
-conceptos vistos en la \texttt{Sección \ref{sec:mdsd}} referentes a MDSD,
-focalizando el uso de modelos UML, tales restricciones determinan que se siguen
-los patrones relacionados a MDA como se acotó en la
-\texttt{Sección \ref{sec:arquitectura_dirigida_por_modelos}}, como se menciona
-en la sección para MSDS, para la implementación de tales técnicas, uno de los
-requisitos es la definición de un Lenguaje Específico de Dominio, (tratado en
-la \texttt{Sección \ref{sec:dsl}}).
+Se presentaron dos opciones respecto a estructurar el documento:
 
-Director, proveera de un lenguaje especifico de dominio que permite el modelado de
-sistemas de información orientados a objetos, en esta primera iteración del
-mismo, se pretende incluir las entidades utilizadas en la realización de
-gráficas de Diagramas de Clase pertenecientes a la familia de Diagramas UML.
+\begin{itemize}
+\item \textit{La primera} era estructurar el documento basandonos en el formato
+propuesto por la cátedra, lo cual, si bien iba a hacer que se cumplan con los
+requisitos de la materia, iba a dejar el documento, y la especificación del
+lenguaje expuesto mas dificil de comprender/leer, dado al hecho de  que si se
+quiere comprender como funciona, por ejemplo, la declaración de un componente
+en particular, se tendría que realizar una búsqueda frustrante a través de
+múltiples secciones para poder obtener la explicacion del componente, la
+expresión regular que lo gobierna, la sintáxis a seguir, la representación
+mediante autómatas finitos, etc.
+\item Lo cual nos lleva a l \textit{la segunda} opción, no seguir el documento
+de la cátedra y componer el documento de forma tal que esté avocado y centrado
+en los componentes del lenguaje en proceso de definición, esto declarando
+secciónes que expliquen cada componente teórico de tal forma que si se quiere
+saber como utilizar una parte específica de la herramienta, no hace falta
+saltar de una sección a otra, sino que esta información que se requiere estaría
+compilada en el mismo lugar.
+\end{itemize}
+
+En conclusión, se decidió agrupar las distintas herramientas de la definición
+del lenguaje según los componentes del mismo para una mejor lectura y
+comprensión.
+
 
 \section*{Estructura del Lenguaje}
-A continuación, se presentarán en diferentes secciones los componentes que
-hacen al lenguaje, estos se ubicaran según el nivel de dependencia de cada uno
+A continuación se presentarán en diferentes secciones los componentes que
+hacen al lenguaje, estos se ubicarán según el nivel de dependencia de cada uno
 con respecto a los demás componentes, de esta manera, compartimentando la
 responsabilidad se hace a una explicación mas simplificada de la herramienta.
 
 Se pueden esperar, para cada sección que describe a un elemento del lenguaje,
 las siguientes notaciones que formalizan a la propuesta del presente
-documento: \texttt{Gramática libre de contexto en formato BNF (Backus-Naur)},
-\texttt{Expresiones Regulares}, \texttt{Autómatas Finitos}.
+documento:
+\begin{itemize}
+  \item \texttt{Expresiones Regulares} (según se demuestra en \cite{regexr},
+    \cite{dib})
+  \item \texttt{Autómatas Finitos} (\cite{aho2008}, \cite{catalan2010})
+  \item \texttt{Gramática libre de contexto en formato BNF (Backus-Naur)}
+  \item \texttt{Árboles Sintácticos} (según se ejemplos vistos en
+    \cite{aho2008}, y ejemplos de trabajos anteriores\footnote{Stasiuk, Delia;
+    Aquino, Marcos G. \textit{Mi Lenguaje: AlfaLG}, 2018} \footnote{Pezuk,
+    Alejandro. \textit{DislexiC}} \footnote{Reverditto, Carlos E.; Sotelo, Sebastian.
+    \textit{Mi Lenguaje: InLenPRO}, 2015} \footnote{Ruberto, Jorge J.
+    \textit{MusiCodigo}, 2017}),
+    para lo cual cabe destacar que se utilizó la herramienta
+    web \cite[phpSyntaxTree]{syntree}.
+\end{itemize}
+
+La cuestión a tener en cuenta con este accionar es que no se estarán respetando las secciones
+establecidas por la cátedra, aunque esto en pro de un mejor entendimiento del
+documento, para contrarestar esta situación lo que se va a hacer es lo
+siguiente, teniendo en cuenta que las secciones establecidas como de interés
+por la materia en cuanto a lo técnico son\footnote{explícito en el
+documento que tiene las consignas para el trabajo, por lo tanto se considera
+como de particular interés}: \texttt{Analizador Léxico} y \texttt{Analizador
+Sintáctico}, se marcarán los elementos que pertenezcan a cada categoría y de
+esta manera contar con una forma de relacionar las secciones con lo que se
+requiere para el trabajo.
 
 \input{director/palabras_reservadas.tex}
 

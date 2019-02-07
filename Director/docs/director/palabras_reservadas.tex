@@ -1,6 +1,10 @@
 \section{Palabras Reservadas}
 \label{sec:palabrasreservadas}
 
+\begin{center}
+  \texttt{ACLARACIÓN: esta sección es parte del Analizador Léxico}\\
+\end{center}
+
 Aquí se describirán las palabras utilizadas como tokens en el lenguaje
 propuesto, estas permiten, desde el establecimiento de relaciones
 entre entidades de un modelo, hasta la habilidad de indicar el tipo de devolución
@@ -52,7 +56,8 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [integer] Token que permite indicar el tipo de dato devuelto por un metodo, o
+\item [integer] Token que permite indicar el tipo de dato devuelto por un
+	método, o
 	el tipo de dato de un atributo. Hace referencia al tipo de
 	datos entero; equivalente en un lenguaje como Java, \texttt{int}.
 
@@ -64,7 +69,7 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [double] Token que permite indicar el tipo de dato devuelto por un metodo, o
+\item [double] Token que permite indicar el tipo de dato devuelto por un método, o
 	el tipo de dato de un atributo. Hace referencia al tipo de
 	datos doble; equivalente en un lenguaje como Java, \texttt{double}.
 
@@ -76,9 +81,9 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [float] Token que permite indicar el tipo de dato devuelto por un metodo, o
+\item [float] Token que permite indicar el tipo de dato devuelto por un método, o
 	el tipo de dato de un atributo. Hace referencia al tipo de
-	datos con presición flotante; equivalente en un lenguaje como Java,
+	datos con precisión flotante; equivalente en un lenguaje como Java,
 	\texttt{float}.
 
 	Ejemplo:
@@ -89,7 +94,7 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [long] Token que permite indicar el tipo de dato devuelto por un metodo, o
+\item [long] Token que permite indicar el tipo de dato devuelto por un método, o
 	el tipo de dato de un atributo. Hace referencia al tipo de
 	datos largo; equivalente en un lenguaje como Java, \texttt{long}.
 
@@ -101,7 +106,8 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [boolean] Token que permite indicar el tipo de dato devuelto por un metodo, o
+\item [boolean] Token que permite indicar el tipo de dato devuelto por un
+	método, o
 	el tipo de dato de un atributo. Hace referencia al tipo de
 	datos booleanos; equivalente en un lenguaje como Java, \texttt{boolean}.
 
@@ -113,7 +119,7 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [string] Token que permite indicar el tipo de dato devuelto por un metodo, o
+\item [string] Token que permite indicar el tipo de dato devuelto por un método, o
 	el tipo de dato de un atributo. Hace referencia al tipo de
 	datos de cadena de caracteres ; equivalente en un lenguaje como Java, \texttt{String};
 	equivalente en C, \texttt{char[N]}.
@@ -126,7 +132,7 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [char] Token que permite indicar el tipo de dato devuelto por un metodo, o
+\item [char] Token que permite indicar el tipo de dato devuelto por un método, o
 	el tipo de dato de un atributo. Hace referencia al tipo de
 	datos de caracter; equivalente en un lenguaje como Java, \texttt{char}.
 
@@ -138,7 +144,7 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [list] Token que permite indicar el tipo de dato devuelto por un metodo, o
+\item [list] Token que permite indicar el tipo de dato devuelto por un método, o
 	el tipo de dato de un atributo. Hace referencia a una
 	estructura de colección reminiscente a las listas; equivalente en un lenguaje
 	como Java, \texttt{List}.
@@ -151,7 +157,7 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item[set] Token que permite indicar el tipo de dato devuelto por un metodo, o
+\item[set] Token que permite indicar el tipo de dato devuelto por un método, o
 	el tipo de dato de un atributo. Hace referencia a una
 	estructura de colección reminiscente a los conjuntos; equivalente en un lenguaje
 	como Java, \texttt{Set}.
@@ -219,7 +225,7 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [@id] Esta palabra se utiliza como un modificador en el ambito de
+\item [@id] Esta palabra se utiliza como un modificador en el ámbito de
 	los atributos de clase, este permite brindar información extra acerca del
 	atributo en cuestión, en específico, este indica que el atributo es parte del
 	identificador de la clase que lo posee.
@@ -231,10 +237,10 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [@readOnly] Esta palabra se utiliza como un modificador en el ambito de
+\item [@readOnly] Esta palabra se utiliza como un modificador en el ámbito de
 	los atributos de clase, este permite brindar información extra acerca del
-	atributo en cuestión, en específico, este indica que el atributo solo podra
-	ser accedido para lectura una vez se haya guardado.
+	atributo en cuestión, en específico, este indica que el atributo solo podrá
+	ser accedido para lectura una vez que se haya guardado.
 
 	Ejemplo:
 		\begin{lstlisting}
@@ -243,7 +249,7 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [@sequence] Esta palabra se utiliza como un modificador en el ambito de
+\item [@sequence] Esta palabra se utiliza como un modificador en el ámbito de
 	los atributos de clase, este permite brindar información extra acerca del
 	atributo en cuestión, en específico, este indica que el valor que tome el
 	atributo sigue una secuencia.
@@ -255,9 +261,9 @@ con su correspondiente explicación:
 			...
 		\end{lstlisting}
 
-\item [@unique] Esta palabra se utiliza como un modificador en el ambito de
+\item [@unique] Esta palabra se utiliza como un modificador en el ámbito de
 	los atributos de clase, este permite brindar información extra acerca del
-	atributo en cuestión, en específico, este indica que el atributo no tiene
+	atributo en cuestión, en específico, este indica que el atributo no admite
 	duplicados.
 
 	Ejemplo:

@@ -1,6 +1,10 @@
 \section{Símbolos Especiales}
 \label{sec:simbolosespeciales}
 
+\begin{center}
+  \texttt{ACLARACIÓN: esta sección es parte del Analizador Léxico}\\
+\end{center}
+
 % introduccion a los simbolos especiales
 En Director, varios de los símbolos especiales permiten sacar provecho de las
 propiedades gráficas de UML para la confección del modelo, por ejemplo, se
@@ -15,6 +19,7 @@ breve explicación de cada uno de ellos.
 \begin{tabular}{c p{9cm} }
 \hline
 	Símbolo & Descripción \\ \hline
+  {\textbackslash}n& Salto de carro/línea, fin de línea\\
 	+ & Visibilidad de un método/atributo, equivalente a public\\
 	- & Visibilidad de un método/atributo, equivalente a private\\
   \# & Visibilidad de un método/atributo, equivalente a protected\\
@@ -24,6 +29,10 @@ $\sim$ & Visibilidad de un método/atributo, equivalente a package\\
 $\#\#$ & Comentarios de línea dentro del modelo \\
 $\#\{$ & Inicio comentarios multilínea dentro del modelo\\
 $\}\#$ & Fin comentarios multilínea dentro del modelo\\
+  $\{$ & Inicio de un bloque para algún contexto particular (Modificador,
+  Clase, Relación)\\
+  $\}$ & Fin de un bloque para algún contexto particular (Modificador, Clase,
+  Relación)\\
 $\# +$ & Definición de metainformación para el modelo\\
 $//$ & Comentario de línea para el código resultante del modelo\\
 $/*$ & Inicio comentarios multilínea para el codigo resultante del modelo\\

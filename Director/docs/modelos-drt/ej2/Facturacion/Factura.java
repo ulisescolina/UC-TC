@@ -10,7 +10,7 @@ public class Factura{
 	private List<Producto> productos;
 
 	// Constructor por defecto
-	public Factura(int id, int numero
+	public Factura(int id, int numero,
 			TipoFactura tipoFactura) {
 		this.id = id;
 		this.numero = numero;
