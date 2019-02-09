@@ -178,9 +178,9 @@ principio lo que se expuso en la \texttt{Sección
 tiene que el modelo \textbf{es} el código, es decir, que los límites que separan
 la documentación de la codificación se desvanecen.
 
-\section{Misión}
+\section{Objetivos}
 \label{sec:problema}
-El presente trabajo pretende presentar una herramienta que aplique los
+Aquí se presenta una herramienta que aplica los
 conceptos vistos en la \texttt{Sección \ref{sec:mdsd}} referentes a MDSD,
 focalizando el uso de modelos UML, tales restricciones determinan que se siguen
 los patrones relacionados a MDA como se acotó en la
@@ -189,20 +189,57 @@ en la sección para MSDS, para la implementación de tales técnicas, uno de los
 requisitos es la definición de un Lenguaje Específico de Dominio, (tratado en
 la \texttt{Sección \ref{sec:dsl}}).
 
-Director, proveerá de un lenguaje específico de dominio que permite el modelado de
-sistemas de información orientados a objetos, en esta primera iteración del
-mismo, se pretende incluir las entidades utilizadas en la realización de
-gráficas de Diagramas de Clase pertenecientes a la familia de Diagramas UML.
+Teniendo esto en claro se procede a la declaración de los objetivos y estos
+son:
+
+Lograr una herramienta que sea útil en el desarrollo de software dirigido por
+modelos UML.
+Director deberá permitir modelar un dominio a través del código --utilizando un
+lenguaje específico de dominio--; el resultado será la generación de un código en
+un lenguaje de programación orientado a objetos con la estructura equivalente a
+dicho dominio, con sus atributos, métodos y relaciones correspondientes.
+
+Además, frente a una situación de refactorización, o cambios en el dominio,
+Director tendrá que permitir la actualización del modelo, con su correspondiente
+regeneración de código, sin sobreescribir la lógica que ya haya sido incluida.
+Los lenguajes de programación soportados dependerá de los plugins que se puedan
+agregar según la necesidad, y lo desarrollado por la comunidad.
+
+El desarrollo de Director, así como de los plugins determinados, será bajo
+licencia de tipo CopyLeft.
 
 \section{Alcance}%
 \label{sec:alcance}
-De charlas con profesores acerca del tema, además de los diferentes articulos
-citados en las subsecciones anteriores se conoce el estado del desarrollo
-orientado a modelos, en el documento se pretende llegar a la descripcion
---teórica--  de
-varios de los componentes que conformarían una herramienta para la ayuda en el
-area mencionada. Estos componentes permitirán el uso de conceptos UML para la
-generación de código en diferentes lenguajes de programación.
+Se define la sintáxis, léxico y estructura del lenguaje Director; así como algunas
+de sus características; esto es independiente del lenguaje en el cual se obtendrá el
+código generado finalmente.
+
+En esta instancia Director será capaz de expresar únicamente el modelo y relaciones
+correspondientes a un diagrama de clases.
+
+Los ejemplos de generación de código serán con Java/Pyton; sin embargo, como ya se
+explicó anteriormente, Director no estará limitado únicamente a este último.
 
 \section{Líneas Futuras de Investigación}%
 \label{sec:lineas_futuras_de_investigacion}
+Si bien todo lo expuesto referente al desarrollo guiado por modelos -como ser metodologías,
+herramientas y otras cuestiones- data de los años 90, su popularidad y auge están creciendo
+cada vez más, sobre todo entre los grupos que buscan nuevas técnicas en el desarrollo de sistemas
+que presentan nuevos desafíos. Por lo tanto, es nuestro propósito lograr una herramienta no-final,
+sino una que siga evolucionando constantemente según las necesidades que vayan surgiendo.
+
+A pesar de que Director considera un amplio espectro de cuestiones sobre un Lenguaje Específico
+de Dominio, y del modelado UML, somos conscientes de que quedan aún muchas cosas afuera. Dichas
+cuestiones quedan pendientes de seguir trabajando, y son:
+\begin{itemize}
+  \item Como se mencionó en el Alcance del trabajo, Director es capaz de expresar únicamente un
+    diagrama de clases; por lo tanto, queda analizar la posibilidad de incluir otros diagramas de
+    UML en el lenguaje -Máquinas de estado, Diagramas de Secuencia, Diagramas de Paquetes, Diagramas
+    de Actividades, etc- que brinden la posibilidad de modelar mejor el contexto del sistema, con sus
+    funcionalidades, estados y relaciones; esto permitirá ampliar las capacidades de generación de código,
+    y mejorar la efectividad y eficiencia en el producto final, automatizando no sólo el modelo, sino
+    también la lógica de negocio.
+  \item Generación de los diagramas UML correspondientes; es decir, exportar del lenguaje a diagramas
+    como imágenes.
+  \item Generación automática de documentación.
+\end{itemize}

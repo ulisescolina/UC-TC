@@ -17,122 +17,122 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.5.2}Telosys}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Misi\IeC {\'o}n}{4}
+\contentsline {section}{\numberline {1.6}Objetivos}{4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.7}Alcance}{5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.8}L\IeC {\'\i }neas Futuras de Investigaci\IeC {\'o}n}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Director}{6}
+\contentsline {chapter}{\numberline {2}Director}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Palabras Reservadas}{7}
+\contentsline {section}{\numberline {2.1}Palabras Reservadas}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}S\IeC {\'\i }mbolos Especiales}{12}
+\contentsline {section}{\numberline {2.2}S\IeC {\'\i }mbolos Especiales}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Definici\IeC {\'o}n de componentes comunes}{13}
+\contentsline {section}{\numberline {2.3}Definici\IeC {\'o}n de componentes comunes}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}letra}{13}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{13}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{13}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}digito}{13}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{13}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{13}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}simbolo}{14}
+\contentsline {subsection}{\numberline {2.3.1}letra}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}texto}{14}
+\contentsline {subsection}{\numberline {2.3.2}digito}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{14}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}simbolo}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{15}
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.5}nombre}{15}
+\contentsline {subsection}{\numberline {2.3.4}texto}{15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.6}visibilidad}{16}
+\contentsline {subsection}{\numberline {2.3.5}nombre}{16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.7}tipo}{17}
+\contentsline {subsection}{\numberline {2.3.6}visibilidad}{17}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{17}
+\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Comentario}{18}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Comentarios Director}{18}
+\contentsline {subsection}{\numberline {2.3.7}tipo}{18}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{19}
+\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Derivaciones Comentario Linea - Director}{19}
+\contentsline {section}{\numberline {2.4}Comentario}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Derivaciones Comentario Multil\IeC {\'\i }nea - Director}{20}
+\contentsline {subsection}{\numberline {2.4.1}Comentarios Director}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Comentarios para Lenguaje}{20}
+\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{21}
+\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{21}
+\contentsline {subsubsection}{Derivaciones Comentario Linea - Director}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Derivaciones Comentarios Linea - Lenguaje Generado}{22}
+\contentsline {subsubsection}{Derivaciones Comentario Multil\IeC {\'\i }nea - Director}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Derivaciones Comentarios Multilinea - Lenguaje Generado}{22}
+\contentsline {subsection}{\numberline {2.4.2}Comentarios para Lenguaje}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Atributo}{23}
+\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{25}
+\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{26}
+\contentsline {subsubsection}{Derivaciones Comentarios Linea - Lenguaje Generado}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Derivaciones Atributo}{26}
+\contentsline {subsubsection}{Derivaciones Comentarios Multilinea - Lenguaje Generado}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}M\IeC {\'e}todo}{28}
+\contentsline {section}{\numberline {2.5}Atributo}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{29}
+\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{30}
+\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Derivaciones M\IeC {\'e}todo}{30}
+\contentsline {subsubsection}{Derivaciones Atributo}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Clase}{31}
+\contentsline {section}{\numberline {2.6}M\IeC {\'e}todo}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{33}
+\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{33}
+\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Derivaciones Clase}{33}
+\contentsline {subsubsection}{Derivaciones M\IeC {\'e}todo}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Relaci\IeC {\'o}n}{34}
+\contentsline {section}{\numberline {2.7}Clase}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{35}
+\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{37}
+\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Derivaciones Relaci\IeC {\'o}n}{39}
+\contentsline {subsubsection}{Derivaciones Clase}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Metadatos}{40}
+\contentsline {section}{\numberline {2.8}Relaci\IeC {\'o}n}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Anexos}{42}
+\contentsline {subsubsection}{Analizador L\IeC {\'e}xico}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Ejemplo 1}{42}
+\contentsline {subsubsection}{Analizador Sint\IeC {\'a}ctico}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Ejemplo 2}{44}
+\contentsline {subsubsection}{Derivaciones Relaci\IeC {\'o}n}{40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Ejemplo 3}{50}
+\contentsline {section}{\numberline {2.9}Metadatos}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Anexos}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Ejemplo 1}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Ejemplo 2}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Ejemplo 3}{51}
